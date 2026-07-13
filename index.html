@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090C" />
+
+  <title>Nebula AI — Transform Data Into Decisions With AI</title>
+  <meta name="description" content="Nebula AI is the enterprise AI workspace that turns scattered data into decisions. Automate workflows, surface insights, and scale operations — in minutes, not months." />
+  <meta name="keywords" content="AI SaaS, workflow automation, analytics dashboard, enterprise AI, data platform" />
+  <meta name="author" content="Nebula AI" />
+  <link rel="canonical" href="https://nebula.ai/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nebula AI — Transform Data Into Decisions With AI" />
+  <meta property="og:description" content="The enterprise AI workspace that turns scattered data into decisions. Automate workflows and surface insights in minutes." />
+  <meta property="og:url" content="https://nebula.ai/" />
+  <meta property="og:image" content="assets/images/og-cover.png" />
+  <meta property="og:site_name" content="Nebula AI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nebula AI — Transform Data Into Decisions With AI" />
+  <meta name="twitter:description" content="The enterprise AI workspace that turns scattered data into decisions." />
+  <meta name="twitter:image" content="assets/images/og-cover.png" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <script src="assets/js/theme.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nebula AI",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Enterprise AI workspace for workflow automation and analytics.",
+    "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "USD" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2841" }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Page loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <span class="loader__text">Nebula AI</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="logo" href="index.html" aria-label="Stackly home">
+        <img class="logo__image" src="assets/images/logo%20stackly.webp" alt="Stackly" />
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn--ghost btn--sm" href="login.html">Login</a>
+        <a class="btn btn--primary btn--sm" href="signup.html">Get Started</a>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile navigation">
+    <div class="drawer__head">
+      <a class="logo" href="index.html" aria-label="Stackly home">
+        <img class="logo__image" src="assets/images/logo%20stackly.webp" alt="Stackly" />
+      </a>
+      <button class="drawer__close" data-drawer-close aria-label="Close menu">&times;</button>
+    </div>
+
+    <a class="drawer__link" href="index.html">Home</a>
+    <a class="drawer__link" href="about.html">About</a>
+    <a class="drawer__link" href="features.html">Features</a>
+    <a class="drawer__link" href="pricing.html">Pricing</a>
+    <a class="drawer__link" href="blog.html">Blog</a>
+    <a class="drawer__link" href="faq.html">FAQ</a>
+    <a class="drawer__link" href="contact.html">Contact</a>
+
+    <div class="drawer__actions">
+      <a class="btn btn--ghost" href="login.html">Login</a>
+      <a class="btn btn--primary" href="signup.html">Get Started Free</a>
+    </div>
+  </aside>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="aurora"></div>
+        <div class="hero__glow"></div>
+        <div class="grid-lines"></div>
+        <span class="blob blob--1" data-parallax="18"></span>
+        <span class="blob blob--2" data-parallax="26"></span>
+        <span class="blob blob--3" data-parallax="12"></span>
+        <canvas id="particles"></canvas>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="badge" data-reveal="up">
+            <span class="badge__pill">New</span>
+            Nebula Agents 2.0 is live
+          </span>
+
+          <h1 class="hero__title" data-reveal="up" data-reveal-delay="90">
+            Transform Data Into<br />
+            Decisions With AI
+          </h1>
+
+          <p class="hero__desc" data-reveal="up" data-reveal-delay="180">
+            Nebula AI unifies your scattered tools, models and metrics into one intelligent
+            workspace — so your team ships decisions in minutes instead of quarterly reviews.
+          </p>
+
+          <div class="hero__cta" data-reveal="up" data-reveal-delay="270">
+            <a class="btn btn--primary btn--lg" href="signup.html">
+              <span class="btn__label">Get Started Free</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="contact.html">Book a Demo</a>
+            <button class="btn btn--text" data-modal-open="demoModal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m10 8 6 4-6 4V8Z" /></svg>
+              Watch Demo
+            </button>
+          </div>
+
+          <div class="hero__meta" data-reveal="up" data-reveal-delay="360">
+            <div class="avatars" aria-hidden="true">
+              <span class="avatar av-1">AK</span><span class="avatar av-6">MR</span>
+              <span class="avatar av-3">JD</span><span class="avatar av-5">SL</span>
+            </div>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+              No credit card required
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+              14-day free trial
+            </span>
+          </div>
+        </div>
+
+        <!-- Floating dashboard mockup -->
+        <div class="hero__visual" data-reveal="zoom-in" data-reveal-delay="240">
+          <div class="mockup" data-parallax="10">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+              <span class="mockup__title">nebula.ai/dashboard</span>
+            </div>
+
+            <div class="mockup__body">
+              <div class="mockup__stats">
+                <div class="mini-stat"><span>Revenue</span><strong>$132.4k</strong><em>+18.2%</em></div>
+                <div class="mini-stat"><span>Active</span><strong>8,214</strong><em>+9.4%</em></div>
+                <div class="mini-stat"><span>Tasks</span><strong>1,092</strong><em>+24.1%</em></div>
+              </div>
+
+              <div class="mockup__chart" aria-hidden="true">
+                <i style="height:38%;animation-delay:.1s"></i>
+                <i style="height:56%;animation-delay:.2s"></i>
+                <i style="height:44%;animation-delay:.3s"></i>
+                <i style="height:72%;animation-delay:.4s"></i>
+                <i style="height:60%;animation-delay:.5s"></i>
+                <i style="height:88%;animation-delay:.6s"></i>
+                <i style="height:70%;animation-delay:.7s"></i>
+                <i style="height:96%;animation-delay:.8s"></i>
+              </div>
+
+              <div class="mockup__rows">
+                <div class="mockup__row">
+                  <b></b> Pipeline sync <span class="bar"><i style="width:82%"></i></span> 82%
+                </div>
+                <div class="mockup__row">
+                  <b></b> Model training <span class="bar"><i style="width:64%"></i></span> 64%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--tl glass">
+            <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.9 2.9M16.2 16.2l2.9 2.9M2 12h4M18 12h4M4.9 19.1l2.9-2.9M16.2 7.8l2.9-2.9" /></svg></i>
+            <div><small>AI insight</small><strong>+32% conversion</strong></div>
+          </div>
+
+          <div class="float-card float-card--br glass">
+            <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg></i>
+            <div><small>Automation</small><strong>1,284 tasks done</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ============ TRUSTED BY ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <p class="marquee-label" data-reveal="fade">Trusted by 4,000+ teams at the world's fastest-moving companies</p>
+
+        <div class="marquee">
+          <div class="marquee__track">
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9" /></svg>Northwind</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="4" /></svg>Vertex</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 9 18H3l9-18Z" /></svg>Apexly</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18" /></svg>Quantum</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="5" /><circle cx="16" cy="12" r="5" /></svg>Looply</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20 12 4l8 16" /></svg>Everest</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="10" rx="5" /></svg>Cobalt</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 7v10l8 5 8-5V7l-8-5Z" /></svg>Hexon</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h6l3-8 3 16 3-8h3" /></svg>Pulsegrid</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="9" /></svg>Orbital</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5h14v14H5z" /><path d="m9 9 6 6" /></svg>Gridline</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2Z" /></svg>Datacore</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 0 1 16 0" /><path d="M4 12h16" /></svg>Skyfall</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 4 2.5 5.5L20 12l-5.5 2.5L12 20l-2.5-5.5L4 12l5.5-2.5L12 4Z" /></svg>Lumina</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" /><rect x="13" y="13" width="7" height="7" /></svg>Blockwise</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18 18 6M6 6l12 12" /></svg>Nexus</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 0 1 0 18" /><path d="M12 3a9 9 0 0 0 0 18" /></svg>Meridian</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17 9 7l6 10 6-10" /></svg>Waveform</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3" /><path d="M12 3v3M12 18v3M3 12h3M18 12h3" /></svg>Helios</span>
+            <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v6H4zM4 14h10v6H4z" /></svg>Stackly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="eyebrow">Platform</span>
+          <h2>Everything your team needs, <span class="gradient-text">in one workspace</span></h2>
+          <p>Six deeply integrated capabilities that replace a dozen disconnected tools — and the spreadsheets holding them together.</p>
+        </div>
+
+        <div class="grid feature-grid stagger">
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.9 2.9M16.2 16.2l2.9 2.9M2 12h4M18 12h4M4.9 19.1l2.9-2.9M16.2 7.8l2.9-2.9" /><circle cx="12" cy="12" r="3" /></svg>
+            </span>
+            <h3>AI Automation</h3>
+            <p>Agents that read your context, draft the work, and hand it back for a one-click approval. Trained on your data, not the public web.</p>
+            <a class="card__link" href="features.html">Explore agents
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2" /><rect x="14" y="14" width="7" height="7" rx="2" /><path d="M10 6.5h4a3 3 0 0 1 3 3V14" /></svg>
+            </span>
+            <h3>Workflow Automation</h3>
+            <p>Chain triggers, conditions and actions across 200+ apps. Build in a visual canvas, ship without a single line of glue code.</p>
+            <a class="card__link" href="features.html">See workflows
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18" /><path d="m7 15 4-5 3 3 5-7" /></svg>
+            </span>
+            <h3>Analytics Dashboard</h3>
+            <p>Live metrics, cohort views and anomaly alerts. Ask a question in plain English and get a chart back in under a second.</p>
+            <a class="card__link" href="dashboard.html">View dashboard
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97 6 6 0 0 0-11.6-1.4A4 4 0 0 0 6.5 19h11Z" /><path d="M12 12v6M9 15l3-3 3 3" /></svg>
+            </span>
+            <h3>Cloud Storage</h3>
+            <p>Petabyte-scale object storage with versioning, instant search and zero egress fees inside your workspace region.</p>
+            <a class="card__link" href="features.html">Storage details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3" /><circle cx="18" cy="18" r="3" /><path d="M6 9v6a3 3 0 0 0 3 3h6" /></svg>
+            </span>
+            <h3>Smart Integrations</h3>
+            <p>Two-way sync with Slack, Notion, Salesforce, GitHub, Stripe and 200 more. Set up in a click, no engineering ticket required.</p>
+            <a class="card__link" href="features.html">Browse integrations
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="card" data-reveal="up" data-tilt>
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></svg>
+            </span>
+            <h3>Enterprise Security</h3>
+            <p>SOC 2 Type II, GDPR, HIPAA. SSO, SCIM, audit logs, and customer-managed encryption keys on every plan tier.</p>
+            <a class="card__link" href="features.html">Security overview
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section--alt" id="how-it-works">
+      <div class="container">
+        <div class="grid split">
+          <div>
+            <span class="eyebrow" data-reveal="up">How it works</span>
+            <h2 data-reveal="up" data-reveal-delay="60">From signup to <span class="gradient-text">shipped automation</span> in four steps</h2>
+            <p class="mt-sm" data-reveal="up" data-reveal-delay="120">
+              Most teams are running their first production workflow before the coffee gets cold.
+              No implementation consultants, no six-week onboarding.
+            </p>
+
+            <div class="timeline mt-lg">
+              <div class="timeline__item" data-reveal="left">
+                <span class="timeline__dot">1</span>
+                <div class="timeline__body">
+                  <h3>Create your account</h3>
+                  <p>Sign up with email or SSO. Your workspace is provisioned in about eight seconds.</p>
+                </div>
+              </div>
+
+              <div class="timeline__item" data-reveal="left" data-reveal-delay="120">
+                <span class="timeline__dot">2</span>
+                <div class="timeline__body">
+                  <h3>Connect your workspace</h3>
+                  <p>Link the tools you already use. Nebula maps your schema automatically and flags gaps.</p>
+                </div>
+              </div>
+
+              <div class="timeline__item" data-reveal="left" data-reveal-delay="240">
+                <span class="timeline__dot">3</span>
+                <div class="timeline__body">
+                  <h3>Automate your tasks</h3>
+                  <p>Describe the outcome in plain language. Nebula drafts the workflow; you approve or edit it.</p>
+                </div>
+              </div>
+
+              <div class="timeline__item" data-reveal="left" data-reveal-delay="360">
+                <span class="timeline__dot">4</span>
+                <div class="timeline__body">
+                  <h3>Track your results</h3>
+                  <p>Watch hours saved, tasks completed and revenue influenced on a live dashboard.</p>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn--primary mt-lg" href="signup.html">
+              <span class="btn__label">Start Building Free</span>
+            </a>
+          </div>
+
+          <div class="split__media" data-reveal="right">
+            <div class="steps-media">
+              <div class="steps-media__glow" aria-hidden="true"></div>
+              <div class="mockup" style="animation:none">
+                <div class="mockup__bar">
+                  <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+                  <span class="mockup__title">workflow-builder</span>
+                </div>
+                <div class="mockup__body">
+                  <div class="mockup__row"><b></b> Trigger — New Stripe payment <span class="pill pill--purple" style="margin-left:auto">Live</span></div>
+                  <div class="mockup__row"><b></b> AI step — Classify customer tier</div>
+                  <div class="mockup__row"><b></b> Action — Update CRM record</div>
+                  <div class="mockup__row"><b></b> Action — Notify #revenue in Slack</div>
+                  <div class="mockup__chart" aria-hidden="true">
+                    <i style="height:30%"></i><i style="height:58%"></i><i style="height:42%"></i>
+                    <i style="height:78%"></i><i style="height:64%"></i><i style="height:92%"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT SHOWCASE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="eyebrow">Product</span>
+          <h2>Beautiful on <span class="gradient-text">every screen</span></h2>
+          <p>The same real-time workspace on desktop, tablet and mobile — with offline drafts that sync when you reconnect.</p>
+        </div>
+
+        <div class="showcase" data-reveal="zoom-in">
+          <div class="showcase__glow" aria-hidden="true"></div>
+
+          <!-- Laptop: the hero device -->
+          <div class="laptop">
+            <div class="laptop__lid">
+              <div class="laptop__screen">
+                <span class="laptop__camera" aria-hidden="true"></span>
+                <img src="assets/images/product/dashboard-desktop.svg"
+                     alt="The Stackly desktop dashboard: revenue, active users and workflow analytics"
+                     width="1400" height="875" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="laptop__base" aria-hidden="true"><span class="laptop__notch"></span></div>
+          </div>
+
+          <!-- Tablet: overlaps the laptop from the left -->
+          <div class="tablet">
+            <div class="tablet__screen">
+              <img src="assets/images/product/board-tablet.svg"
+                   alt="The Stackly project board on a tablet"
+                   width="820" height="1100" loading="lazy" decoding="async" />
+            </div>
+          </div>
+
+          <!-- Phone: overlaps the laptop from the right -->
+          <div class="phone">
+            <div class="phone__screen">
+              <span class="phone__island" aria-hidden="true"></span>
+              <img src="assets/images/product/app-mobile.svg"
+                   alt="The Stackly mobile app showing revenue and recent activity"
+                   width="390" height="844" loading="lazy" decoding="async" />
+            </div>
+          </div>
+        </div>
+
+        <ul class="showcase__points stagger">
+          <li data-reveal="up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" /></svg>
+            <div><strong>Real-time sync</strong><span>Every device sees the same number, instantly.</span></div>
+          </li>
+          <li data-reveal="up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97 6 6 0 0 0-11.6-1.4A4 4 0 0 0 6.5 19h11Z" /></svg>
+            <div><strong>Offline drafts</strong><span>Keep working on the plane; it syncs on landing.</span></div>
+          </li>
+          <li data-reveal="up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+            <div><strong>Dark &amp; light</strong><span>Ships with both, and respects your system.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ STATISTICS ============ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid stats stagger">
+          <div class="stat" data-reveal="up">
+            <div class="stat__num"><span data-counter="500" data-suffix="K+">0</span></div>
+            <p class="stat__label">Active users worldwide</p>
+          </div>
+          <div class="stat" data-reveal="up">
+            <div class="stat__num"><span data-counter="99.9" data-decimals="1" data-suffix="%">0</span></div>
+            <p class="stat__label">Uptime over 24 months</p>
+          </div>
+          <div class="stat" data-reveal="up">
+            <div class="stat__num"><span data-counter="120" data-suffix="+">0</span></div>
+            <p class="stat__label">Countries served</p>
+          </div>
+          <div class="stat" data-reveal="up">
+            <div class="stat__num"><span data-counter="50" data-suffix="M+">0</span></div>
+            <p class="stat__label">Tasks completed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple pricing that <span class="gradient-text">scales with you</span></h2>
+          <p>Start free. Upgrade when your workflows do. Every plan includes unlimited seats on a 14-day trial.</p>
+
+          <div class="pricing-toggle mt-md" data-reveal="up" data-reveal-delay="90">
+            <span data-label-monthly class="is-active">Monthly</span>
+            <button class="switch" data-pricing-toggle role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button>
+            <span data-label-yearly>Yearly</span>
+            <span class="save-pill">Save 20%</span>
+          </div>
+        </div>
+
+        <div class="grid pricing-grid stagger">
+          <article class="card price-card" data-reveal="up">
+            <h3 class="price-card__name">Starter</h3>
+            <p class="price-card__desc">For individuals and small teams testing the waters.</p>
+            <div class="price-card__price">
+              <span class="price-card__period">$</span>
+              <span class="price-card__amount" data-monthly="29" data-yearly="23">29</span>
+              <span class="price-card__period">/ month</span>
+            </div>
+            <p class="price-card__billed" data-billed data-billed-monthly="Billed monthly" data-billed-yearly="Billed $276 annually">Billed monthly</p>
+            <a class="btn btn--ghost btn--block" href="signup.html">Start Free Trial</a>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Up to 5 team members</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>10 active workflows</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>50 GB cloud storage</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Standard analytics</li>
+              <li class="is-off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12" /></svg>Custom AI agents</li>
+              <li class="is-off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12" /></svg>SSO &amp; SCIM</li>
+            </ul>
+          </article>
+
+          <article class="card price-card price-card--featured" data-reveal="up">
+            <span class="price-card__tag">Most Popular</span>
+            <h3 class="price-card__name">Professional</h3>
+            <p class="price-card__desc">For growing teams that live inside their workflows.</p>
+            <div class="price-card__price">
+              <span class="price-card__period">$</span>
+              <span class="price-card__amount" data-monthly="79" data-yearly="63">79</span>
+              <span class="price-card__period">/ month</span>
+            </div>
+            <p class="price-card__billed" data-billed data-billed-monthly="Billed monthly" data-billed-yearly="Billed $756 annually">Billed monthly</p>
+            <a class="btn btn--primary btn--block" href="signup.html">Start Free Trial</a>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Up to 25 team members</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Unlimited workflows</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>1 TB cloud storage</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Advanced analytics &amp; alerts</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Custom AI agents</li>
+              <li class="is-off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12" /></svg>Dedicated success manager</li>
+            </ul>
+          </article>
+
+          <article class="card price-card" data-reveal="up">
+            <h3 class="price-card__name">Enterprise</h3>
+            <p class="price-card__desc">For organisations with compliance and scale demands.</p>
+            <div class="price-card__price">
+              <span class="price-card__period">$</span>
+              <span class="price-card__amount" data-monthly="199" data-yearly="159">199</span>
+              <span class="price-card__period">/ month</span>
+            </div>
+            <p class="price-card__billed" data-billed data-billed-monthly="Billed monthly" data-billed-yearly="Billed $1,908 annually">Billed monthly</p>
+            <a class="btn btn--ghost btn--block" href="contact.html">Contact Sales</a>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Unlimited team members</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Unlimited everything</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Custom storage &amp; regions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>SSO, SCIM &amp; audit logs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>99.99% uptime SLA</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Dedicated success manager</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="text-center mt-lg" data-reveal="fade">
+          Need a detailed breakdown? <a href="pricing.html" class="text-purple">Compare every plan feature &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="eyebrow">Customers</span>
+          <h2>Loved by teams who <span class="gradient-text">ship fast</span></h2>
+        </div>
+
+        <div data-reveal="up">
+          <div class="slider" data-autoplay="6500">
+            <div class="slider__track">
+              <div class="slide">
+                <article class="card testimonial">
+                  <span class="testimonial__avatar av-1" aria-hidden="true">AK</span>
+                  <div class="testimonial__stars" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                  </div>
+                  <p class="testimonial__quote">
+                    "We replaced four tools and a weekly two-hour reporting meeting with a single Stackly
+                    workspace. Our ops team got roughly a day back every week — and the forecasts are
+                    finally something leadership trusts."
+                  </p>
+                  <div class="testimonial__author">
+                    <strong>Amara Kelly</strong>
+                    <span>VP Operations, Northwind Labs</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="slide">
+                <article class="card testimonial">
+                  <span class="testimonial__avatar av-6" aria-hidden="true">MR</span>
+                  <div class="testimonial__stars" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                  </div>
+                  <p class="testimonial__quote">
+                    "The security review was the shortest we've ever run for a SaaS vendor. SOC 2, SCIM,
+                    customer-managed keys — everything our CISO asked for was already shipped and documented."
+                  </p>
+                  <div class="testimonial__author">
+                    <strong>Marcus Reyes</strong>
+                    <span>Director of IT, Vertex Financial</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="slide">
+                <article class="card testimonial">
+                  <span class="testimonial__avatar av-3" aria-hidden="true">JD</span>
+                  <div class="testimonial__stars" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                  </div>
+                  <p class="testimonial__quote">
+                    "I described the workflow in a sentence and Stackly built it. Three months in, it's
+                    handling 40,000 support triage decisions a month with a 2% override rate."
+                  </p>
+                  <div class="testimonial__author">
+                    <strong>Jordan Diaz</strong>
+                    <span>Head of Support, Apexly</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="slide">
+                <article class="card testimonial">
+                  <span class="testimonial__avatar av-5" aria-hidden="true">SL</span>
+                  <div class="testimonial__stars" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 17.9 5.7 21.2 7 14.2 2 9.4l7-.9L12 2Z" /></svg>
+                  </div>
+                  <p class="testimonial__quote">
+                    "Onboarding took an afternoon, not a quarter. That alone made the business case — the
+                    27% lift in qualified pipeline was the part that got us to expand company-wide."
+                  </p>
+                  <div class="testimonial__author">
+                    <strong>Sofia Lindqvist</strong>
+                    <span>CMO, Quantum Retail</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__nav">
+            <button class="slider__btn" data-slider-prev aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6" /></svg>
+            </button>
+            <div class="slider__dots"></div>
+            <button class="slider__btn" data-slider-next aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, <span class="gradient-text">answered</span></h2>
+          <p>Can't find what you're looking for? <a href="contact.html" class="text-purple">Talk to our team.</a></p>
+        </div>
+
+        <div class="accordion" data-reveal="up">
+          <div class="accordion__item is-open">
+            <button class="accordion__trigger" aria-expanded="true">
+              Do I need engineering resources to get started?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>No. Nebula is designed for operators. You connect tools with OAuth, describe the outcome you want in plain language, and review the workflow Nebula drafts. Engineering only gets involved if you want custom code steps — and those are optional.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              How is my data used to train your models?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>It isn't. Your workspace data is never used to train shared or foundation models. Custom agents are fine-tuned in an isolated tenant, and you can delete the artefacts at any time from Settings &rarr; Security.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              Can I change plans or cancel at any time?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Yes. Upgrades take effect immediately and are prorated. Downgrades and cancellations apply at the end of your current billing period, and you keep full export access to your data for 90 days afterwards.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              What integrations are supported out of the box?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Over 200, including Slack, Notion, Salesforce, HubSpot, GitHub, Linear, Jira, Stripe, Snowflake, BigQuery, Google Workspace and Microsoft 365. Anything else can be wired up through our REST API or webhooks.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              Which compliance certifications do you hold?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>SOC 2 Type II, ISO 27001, GDPR and HIPAA (with a signed BAA). Reports are available under NDA from the trust centre, and penetration test summaries are published every six months.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-banner" data-reveal="zoom-in">
+          <h2>Ready to scale your business?</h2>
+          <p>Join 4,000+ teams already running their operations on Nebula AI. Free for 14 days, no card required.</p>
+          <div class="cta-banner__actions">
+            <a class="btn btn--primary btn--lg" href="signup.html">Start Free Trial</a>
+            <a class="btn btn--ghost btn--lg" href="contact.html">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a class="logo" href="index.html" aria-label="Stackly home">
+            <img class="logo__image" src="assets/images/logo%20stackly.webp" alt="Stackly" />
+          </a>
+          <p>The enterprise AI workspace that turns scattered data into decisions your team can act on today.</p>
+          <div class="socials">
+            <a href="#" aria-label="Nebula AI on X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6.4l-5-6.5L4.8 22H2l7-8-7.3-12h6.6l4.5 6 5.4-6Zm-1 18h1.6L7.9 3.8H6.2L17.2 20Z" /></svg></a>
+            <a href="#" aria-label="Nebula AI on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95C21.4 8.75 22 11 22 14v7h-4v-6.2c0-1.5-.03-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3V21h-4V9Z" /></svg></a>
+            <a href="#" aria-label="Nebula AI on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg></a>
+            <a href="#" aria-label="Nebula AI on YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.45-5.17a2.6 2.6 0 0 0-1.83-1.84C19.05 4.5 12 4.5 12 4.5s-7.05 0-8.72.49a2.6 2.6 0 0 0-1.83 1.84C1 8.5 1 12 1 12s0 3.5.45 5.17c.25.9.96 1.6 1.83 1.84 1.67.49 8.72.49 8.72.49s7.05 0 8.72-.49a2.6 2.6 0 0 0 1.83-1.84C23 15.5 23 12 23 12ZM9.75 15.25v-6.5L15.5 12l-5.75 3.25Z" /></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h5>Product</h5>
+          <nav class="footer__links">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="features.html#integrations">Integrations</a>
+          </nav>
+        </div>
+
+        <div>
+          <h5>Company</h5>
+          <nav class="footer__links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#team">Our Team</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html#careers">Careers</a>
+          </nav>
+        </div>
+
+        <div class="footer__col--hide">
+          <h5>Resources</h5>
+          <nav class="footer__links">
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Guides</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="404.html">Status</a>
+          </nav>
+        </div>
+
+        <div class="footer__news">
+          <h5>Newsletter</h5>
+          <p class="footer__news-copy">Product updates and AI-ops playbooks. Twice a month, no fluff.</p>
+
+          <form class="newsletter" novalidate>
+            <div class="newsletter__field">
+              <svg class="newsletter__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="3" /><path d="m3 7 9 6 9-6" />
+              </svg>
+              <label class="sr-only" for="newsletterEmail">Email address</label>
+              <input class="newsletter__input" id="newsletterEmail" name="email" type="email"
+                     placeholder="you@company.com" autocomplete="email" required />
+              <button class="newsletter__submit" type="submit" aria-label="Subscribe to the newsletter">
+                <svg class="newsletter__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+                <span class="newsletter__spinner" aria-hidden="true"></span>
+              </button>
+            </div>
+            <p class="newsletter__status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="footer__note">By subscribing you agree to our <a href="privacy-policy.html" class="text-purple">Privacy Policy</a>.</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> Nebula AI, Inc. All rights reserved.</p>
+        <nav>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html">Support</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </button>
+
+  <!-- Demo video modal -->
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+    <div class="modal__box">
+      <div class="modal__head">
+        <h3 id="demoTitle">Nebula AI in 90 seconds</h3>
+        <button class="modal__close" data-modal-close aria-label="Close dialog">&times;</button>
+      </div>
+      <p>See how a support team automated 40,000 triage decisions a month — start to finish.</p>
+      <div class="modal__video">
+        <button class="play" aria-label="Play demo video">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7L8 5Z" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/accordion.js"></script>
+  <script src="assets/js/pricing.js"></script>
+</body>
+</html>

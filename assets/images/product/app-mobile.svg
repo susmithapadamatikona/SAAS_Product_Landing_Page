@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" role="img" aria-label="Stackly mobile app showing $132,480 revenue and a recent activity feed">
+  <title>Stackly mobile app</title>
+
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D5DF6"/>
+      <stop offset="1" stop-color="#B8A7FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="390" height="844" rx="0" fill="#0E0D1A"/>
+
+  <!-- status bar -->
+  <text x="26" y="42" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start">9:41</text>
+  <rect x="300" y="31" width="17" height="9" rx="2" fill="#B9B8CE"/>
+  <rect x="322" y="31" width="13" height="9" rx="2" fill="#B9B8CE"/>
+  <rect x="342" y="29" width="24" height="12" rx="3" fill="#B9B8CE"/>
+
+  <!-- greeting -->
+  <text x="24" y="88" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="start">Good morning, Ada</text>
+  <text x="24" y="110" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#7B7A97" text-anchor="start">Here's your Monday snapshot</text>
+  <circle cx="348" cy="94" r="19" fill="url(#brand)"/>
+  <text x="348" y="99" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">AL</text>
+
+  <!-- revenue card -->
+  <rect x="24" y="138" width="342" height="142" rx="18" fill="url(#brand)"/>
+  <text x="44" y="168" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#fff" text-anchor="start" opacity="0.85">Total revenue</text>
+  <text x="44" y="212" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#fff" text-anchor="start">$132,480</text>
+  <rect x="44" y="230" width="78" height="24" rx="12" fill="#ffffff38"/>
+  <text x="83" y="247" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#fff" text-anchor="middle">+18.2%</text>
+  <text x="346" y="247" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#fff" text-anchor="end" opacity="0.8">This month</text>
+
+  <!-- chart card -->
+  <rect x="24" y="300" width="342" height="150" rx="18" fill="#1B1B31" stroke="#2C2950"/>
+  <text x="44" y="326" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="start">Last 8 weeks</text>
+  <text x="346" y="326" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#35D39A" text-anchor="end">+24%</text>
+  <path d="M44 409.7 L87.14285714285714 396.4 L130.28571428571428 402.3 L173.42857142857144 385.3 L216.57142857142858 390.5 L259.7142857142857 374.2 L302.8571428571429 380.1 L346 360.9 L346 426 L44 426 Z" fill="url(#area)"/>
+  <path d="M44 409.7 L87.14285714285714 396.4 L130.28571428571428 402.3 L173.42857142857144 385.3 L216.57142857142858 390.5 L259.7142857142857 374.2 L302.8571428571429 380.1 L346 360.9" fill="none" stroke="#B8A7FF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- activity -->
+  <text x="24" y="490" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#FFFFFF" text-anchor="start">Recent activity</text>
+  <text x="366" y="490" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B8A7FF" text-anchor="end">See all</text>
+  <rect x="24" y="506" width="342" height="52" rx="13" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="38" y="519" width="26" height="26" rx="8" fill="#35D39A2e"/>
+  <circle cx="51" cy="532" r="5" fill="#35D39A"/>
+  <text x="76" y="529" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">Invoice reconciled</text>
+  <text x="76" y="545" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7B7A97" text-anchor="start">248 records matched</text>
+  <text x="352" y="537" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">2m</text>
+  <rect x="24" y="568" width="342" height="52" rx="13" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="38" y="581" width="26" height="26" rx="8" fill="#6D5DF62e"/>
+  <circle cx="51" cy="594" r="5" fill="#6D5DF6"/>
+  <text x="76" y="591" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">New message</text>
+  <text x="76" y="607" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7B7A97" text-anchor="start">Amara Kelly · Q3 forecast</text>
+  <text x="352" y="599" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">18m</text>
+  <rect x="24" y="630" width="342" height="52" rx="13" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="38" y="643" width="26" height="26" rx="8" fill="#56B6FF2e"/>
+  <circle cx="51" cy="656" r="5" fill="#56B6FF"/>
+  <text x="76" y="653" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">Payment received</text>
+  <text x="76" y="669" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7B7A97" text-anchor="start">$12,400 · Vertex</text>
+  <text x="352" y="661" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">1h</text>
+  <rect x="24" y="692" width="342" height="52" rx="13" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="38" y="705" width="26" height="26" rx="8" fill="#F7B9552e"/>
+  <circle cx="51" cy="718" r="5" fill="#F7B955"/>
+  <text x="76" y="715" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">Workflow needs approval</text>
+  <text x="76" y="731" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7B7A97" text-anchor="start">Lead routing v3</text>
+  <text x="352" y="723" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">3h</text>
+
+  <!-- tab bar -->
+  <rect x="0" y="758" width="390" height="86" rx="0" fill="#15142A"/>
+  <line x1="0" y1="758" x2="390" y2="758" stroke="#2C2950"/>
+  <rect x="49" y="780" width="22" height="22" rx="7" fill="#B8A7FF"/>
+  <text x="60" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#B8A7FF" text-anchor="middle">Home</text>
+  <rect x="139" y="780" width="22" height="22" rx="7" fill="#3A365E"/>
+  <text x="150" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Stats</text>
+  <rect x="229" y="780" width="22" height="22" rx="7" fill="#3A365E"/>
+  <text x="240" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Tasks</text>
+  <rect x="319" y="780" width="22" height="22" rx="7" fill="#3A365E"/>
+  <text x="330" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">You</text>
+  <rect x="135" y="831" width="120" height="5" rx="2.5" fill="#3A365E"/>
+</svg>

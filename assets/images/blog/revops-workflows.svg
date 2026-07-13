@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Automation workflow chain for RevOps">
+  <title>Automation workflow chain for RevOps</title>
+
+  <defs>
+    <linearGradient id="bgrevopsworkflows" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09090C"/>
+      <stop offset=".45" stop-color="#12121D"/>
+      <stop offset="1" stop-color="#1F1E34"/>
+    </linearGradient>
+    <radialGradient id="glowArevopsworkflows" cx="22%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#35D39A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#35D39A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBrevopsworkflows" cx="82%" cy="88%" r="58%">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokerevopsworkflows" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8A7FF"/>
+      <stop offset="1" stop-color="#6D5DF6"/>
+    </linearGradient>
+    <linearGradient id="fillrevopsworkflows" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#35D39A" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#35D39A" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="softrevopsworkflows" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="grainrevopsworkflows">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+    <pattern id="gridrevopsworkflows" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#6D5DF6" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <clipPath id="cliprevopsworkflows"><rect width="800" height="450" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#cliprevopsworkflows)">
+
+  <rect width="800" height="450" fill="url(#bgrevopsworkflows)"/>
+  <rect width="800" height="450" fill="url(#gridrevopsworkflows)"/>
+  <rect width="800" height="450" fill="url(#glowArevopsworkflows)"/>
+  <rect width="800" height="450" fill="url(#glowBrevopsworkflows)"/>
+<path d="M182 176 C 210 176, 210 121, 300 121"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/><path d="M182 176 C 210 176, 210 276, 300 276"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/><path d="M362 121 C 395 121, 395 196, 490 196"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/><path d="M362 276 C 395 276, 395 196, 490 196"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/><path d="M552 196 C 575 196, 575 146, 660 146"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/><path d="M552 196 C 575 196, 575 291, 660 291"
+      fill="none" stroke="url(#strokerevopsworkflows)" stroke-opacity=".5" stroke-width="1.8" stroke-dasharray="6 5"/>
+    <rect x="120" y="150" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="132" y="165" width="26" height="4" rx="2" fill="#B8A7FF" opacity=".9"/>
+    <rect x="132" y="176" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="182" cy="176" r="4.5" fill="#35D39A"/>
+    <rect x="300" y="95" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="312" y="110" width="26" height="4" rx="2" fill="#35D39A" opacity=".9"/>
+    <rect x="312" y="121" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="362" cy="121" r="4.5" fill="#35D39A"/>
+    <rect x="300" y="250" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="312" y="265" width="26" height="4" rx="2" fill="#B8A7FF" opacity=".9"/>
+    <rect x="312" y="276" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="362" cy="276" r="4.5" fill="#35D39A"/>
+    <rect x="490" y="170" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="502" y="185" width="26" height="4" rx="2" fill="#35D39A" opacity=".9"/>
+    <rect x="502" y="196" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="552" cy="196" r="4.5" fill="#35D39A"/>
+    <rect x="660" y="120" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="672" y="135" width="26" height="4" rx="2" fill="#B8A7FF" opacity=".9"/>
+    <rect x="672" y="146" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="722" cy="146" r="4.5" fill="#35D39A"/>
+    <rect x="660" y="265" width="62" height="52" rx="12" fill="#1F1E34" stroke="url(#strokerevopsworkflows)" stroke-opacity=".6" stroke-width="1.5"/>
+    <rect x="672" y="280" width="26" height="4" rx="2" fill="#35D39A" opacity=".9"/>
+    <rect x="672" y="291" width="38" height="4" rx="2" fill="#B19CFF" opacity=".35"/>
+    <circle cx="722" cy="291" r="4.5" fill="#35D39A"/>
+<rect width="800" height="450" filter="url(#grainrevopsworkflows)" opacity=".55"/>
+  </g>
+</svg>

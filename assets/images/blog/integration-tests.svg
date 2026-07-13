@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Connected node graph representing integration testing">
+  <title>Connected node graph representing integration testing</title>
+
+  <defs>
+    <linearGradient id="bgintegrationtests" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09090C"/>
+      <stop offset=".45" stop-color="#12121D"/>
+      <stop offset="1" stop-color="#1F1E34"/>
+    </linearGradient>
+    <radialGradient id="glowAintegrationtests" cx="22%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#56B6FF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#56B6FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBintegrationtests" cx="82%" cy="88%" r="58%">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokeintegrationtests" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8A7FF"/>
+      <stop offset="1" stop-color="#6D5DF6"/>
+    </linearGradient>
+    <linearGradient id="fillintegrationtests" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#56B6FF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#56B6FF" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="softintegrationtests" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="grainintegrationtests">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+    <pattern id="gridintegrationtests" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#6D5DF6" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipintegrationtests"><rect width="800" height="450" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#clipintegrationtests)">
+
+  <rect width="800" height="450" fill="url(#bgintegrationtests)"/>
+  <rect width="800" height="450" fill="url(#gridintegrationtests)"/>
+  <rect width="800" height="450" fill="url(#glowAintegrationtests)"/>
+  <rect width="800" height="450" fill="url(#glowBintegrationtests)"/>
+<line x1="170" y1="120" x2="340" y2="90"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.18" stroke-width="1.4"/><line x1="170" y1="120" x2="370" y2="200"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.31" stroke-width="1.4"/><line x1="140" y1="235" x2="370" y2="200"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.44" stroke-width="1.4"/><line x1="140" y1="235" x2="330" y2="310"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.57" stroke-width="1.4"/><line x1="190" y1="340" x2="330" y2="310"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.18" stroke-width="1.4"/><line x1="190" y1="340" x2="360" y2="400"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.31" stroke-width="1.4"/><line x1="340" y1="90" x2="530" y2="140"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.44" stroke-width="1.4"/><line x1="370" y1="200" x2="530" y2="140"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.57" stroke-width="1.4"/><line x1="370" y1="200" x2="560" y2="260"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.18" stroke-width="1.4"/><line x1="330" y1="310" x2="560" y2="260"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.31" stroke-width="1.4"/><line x1="330" y1="310" x2="520" y2="370"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.44" stroke-width="1.4"/><line x1="360" y1="400" x2="520" y2="370"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.57" stroke-width="1.4"/><line x1="530" y1="140" x2="680" y2="210"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.18" stroke-width="1.4"/><line x1="560" y1="260" x2="680" y2="210"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.31" stroke-width="1.4"/><line x1="560" y1="260" x2="660" y2="320"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.44" stroke-width="1.4"/><line x1="520" y1="370" x2="660" y2="320"
+       stroke="url(#strokeintegrationtests)" stroke-opacity="0.57" stroke-width="1.4"/><circle cx="170" cy="120" r="17" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="170" cy="120" r="9" fill="#56B6FF" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="140" cy="235" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="140" cy="235" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="190" cy="340" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="190" cy="340" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="340" cy="90" r="17" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="340" cy="90" r="9" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="370" cy="200" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="370" cy="200" r="6" fill="#56B6FF" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="330" cy="310" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="330" cy="310" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="360" cy="400" r="17" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="360" cy="400" r="9" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="530" cy="140" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="530" cy="140" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="560" cy="260" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="560" cy="260" r="6" fill="#56B6FF" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="520" cy="370" r="17" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="520" cy="370" r="9" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="680" cy="210" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="680" cy="210" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/><circle cx="660" cy="320" r="14" fill="#56B6FF" opacity=".16" filter="url(#softintegrationtests)"/>
+            <circle cx="660" cy="320" r="6" fill="#12121D" stroke="url(#strokeintegrationtests)" stroke-width="2"/>
+<rect width="800" height="450" filter="url(#grainintegrationtests)" opacity=".55"/>
+  </g>
+</svg>

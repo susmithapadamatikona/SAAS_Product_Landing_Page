@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Shield representing zero-retention AI privacy">
+  <title>Shield representing zero-retention AI privacy</title>
+
+  <defs>
+    <linearGradient id="bgzeroretention" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09090C"/>
+      <stop offset=".45" stop-color="#12121D"/>
+      <stop offset="1" stop-color="#1F1E34"/>
+    </linearGradient>
+    <radialGradient id="glowAzeroretention" cx="22%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBzeroretention" cx="82%" cy="88%" r="58%">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokezeroretention" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8A7FF"/>
+      <stop offset="1" stop-color="#6D5DF6"/>
+    </linearGradient>
+    <linearGradient id="fillzeroretention" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="softzeroretention" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="grainzeroretention">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+    <pattern id="gridzeroretention" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#6D5DF6" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipzeroretention"><rect width="800" height="450" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#clipzeroretention)">
+
+  <rect width="800" height="450" fill="url(#bgzeroretention)"/>
+  <rect width="800" height="450" fill="url(#gridzeroretention)"/>
+  <rect width="800" height="450" fill="url(#glowAzeroretention)"/>
+  <rect width="800" height="450" fill="url(#glowBzeroretention)"/>
+
+    <g transform="translate(400 225)">
+      <path d="M0 -130 L110 -88 V10 C110 78 52 118 0 138 C-52 118 -110 78 -110 10 V-88 Z"
+        fill="#1F1E34" stroke="url(#strokezeroretention)" stroke-width="2.5"/>
+      <path d="M0 -130 L110 -88 V10 C110 78 52 118 0 138 C-52 118 -110 78 -110 10 V-88 Z"
+        fill="#6D5DF6" opacity=".1"/>
+      <path d="M0 -130 L110 -88 V10 C110 78 52 118 0 138 C-52 118 -110 78 -110 10 V-88 Z"
+        fill="none" stroke="#6D5DF6" stroke-width="14" opacity=".14" filter="url(#softzeroretention)"/>
+      <rect x="-38" y="-16" width="76" height="60" rx="12" fill="none" stroke="url(#strokezeroretention)" stroke-width="3"/>
+      <path d="M-20 -16 V-38 a20 20 0 0 1 40 0 V-16" fill="none" stroke="url(#strokezeroretention)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="0" cy="12" r="7" fill="#6D5DF6"/>
+      <rect x="-2.5" y="12" width="5" height="18" rx="2.5" fill="#6D5DF6"/>
+    </g>
+    <circle cx="150" cy="110" r="5" fill="#B8A7FF" opacity=".5"/><circle cx="660" cy="130" r="5" fill="#B8A7FF" opacity=".5"/><circle cx="130" cy="350" r="5" fill="#B8A7FF" opacity=".5"/><circle cx="680" cy="330" r="5" fill="#B8A7FF" opacity=".5"/>
+<rect width="800" height="450" filter="url(#grainzeroretention)" opacity=".55"/>
+  </g>
+</svg>

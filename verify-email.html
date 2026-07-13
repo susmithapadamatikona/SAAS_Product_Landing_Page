@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090C" />
+
+  <title>Verify Your Email | Nebula AI</title>
+  <meta name="description" content="Enter the 6-digit verification code we sent to your email to activate your Nebula AI workspace." />
+  <link rel="canonical" href="https://nebula.ai/verify-email.html" />
+
+  <meta property="og:title" content="Verify Your Email | Nebula AI" />
+  <meta property="og:description" content="Enter the 6-digit verification code we sent to your email to activate your Nebula AI workspace." />
+  <meta property="og:image" content="assets/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/authentication.css" />
+
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-guest-only>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="auth">
+    <aside class="auth__aside">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="aurora"></div>
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+      </div>
+
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 17 9 5 9-5" /><path d="m3 12 9 5 9-5" /></svg></span>
+        <span>Nebula<span class="text-purple">AI</span></span>
+      </a>
+
+      <div class="auth__aside-body">
+        <span class="badge"><span class="badge__pill">New</span> Nebula Agents 2.0 is live</span>
+        <h2>The AI workspace your <span class="gradient-text">whole team</span> will actually use.</h2>
+        <p>Connect your tools, describe the outcome, and let Nebula handle the busywork — securely, at enterprise scale.</p>
+
+        <ul class="auth-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Set up your first workflow in under 10 minutes</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>SOC 2 Type II, GDPR and HIPAA compliant</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>200+ native integrations, zero glue code</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>14-day free trial — no credit card required</span></li>
+        </ul>
+      </div>
+
+      <blockquote class="auth__quote">
+        <p>"I described the workflow in a sentence and Nebula built it. Three months in, it handles 40,000 support triage decisions a month."</p>
+        <footer>
+          <span class="testimonial__avatar">JD</span>
+          <div><strong>Jordan Diaz</strong><span>Head of Support, Apexly</span></div>
+        </footer>
+      </blockquote>
+
+    </aside>
+
+    <main class="auth__main" id="main">
+      <div class="auth-card">
+        <div id="otpCard">
+          <a class="auth-back" href="signup.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+            Back
+          </a>
+
+          <div class="auth-card__head">
+            <h1>Verify your email</h1>
+            <p>We sent a 6-digit code to <strong id="otpEmail" style="color:var(--text-2)">your inbox</strong>.</p>
+          </div>
+
+          <form id="otpForm" novalidate>
+            <div class="otp" role="group" aria-label="6-digit verification code">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 1" autocomplete="one-time-code" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 2" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 3" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 4" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 5" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 6" />
+            </div>
+
+            <p class="otp-meta">
+              Code expires in <span class="countdown">01:00</span>
+            </p>
+
+            <button class="btn btn--primary btn--block btn--lg mt-md" type="submit">
+              <span class="btn__label">Verify Email</span>
+              <span class="btn__spinner"></span>
+            </button>
+          </form>
+
+          <p class="otp-meta">
+            Didn't receive a code?
+            <button type="button" id="resendOtp" disabled>Resend code</button>
+          </p>
+
+          <div class="auth-card__foot">
+            Wrong address? <a href="signup.html">Start over</a>
+          </div>
+        </div>
+
+        <!-- Success state -->
+        <div class="auth-success hidden" id="otpSuccess">
+          <div class="auth-success__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h2>Email verified</h2>
+          <p>Your workspace is ready. Taking you to your dashboard…</p>
+          <a class="btn btn--primary btn--block" href="dashboard.html">Go to Dashboard</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/validation.js"></script>
+
+</body>
+</html>

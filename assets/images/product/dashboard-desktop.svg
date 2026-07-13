@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 875" width="1400" height="875" role="img" aria-label="Stackly desktop dashboard showing $132,480 revenue, 8,214 active users, a revenue chart and a recent invoices table">
+  <title>Stackly desktop dashboard</title>
+
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D5DF6"/>
+      <stop offset="1" stop-color="#B8A7FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1400" height="875" rx="0" fill="#0E0D1A"/>
+
+  <!-- ============ sidebar ============ -->
+  <rect x="0" y="0" width="236" height="875" rx="0" fill="#15142A"/>
+  <line x1="236" y1="0" x2="236" y2="875" stroke="#2C2950"/>
+  <rect x="24" y="22" width="30" height="30" rx="9" fill="url(#brand)"/>
+  <text x="64" y="43" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Stackly</text>
+
+  <text x="24" y="92" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#7B7A97" text-anchor="start">WORKSPACE</text>
+  <rect x="14" y="112" width="208" height="36" rx="10" fill="#6D5DF62e"/>
+  <rect x="28" y="123" width="14" height="14" rx="4" fill="#B8A7FF"/>
+  <text x="52" y="135" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start">Dashboard</text>
+  
+  
+  <rect x="28" y="165" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="177" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Analytics</text>
+  
+  
+  <rect x="28" y="207" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="219" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Projects</text>
+  
+  
+  <rect x="28" y="249" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="261" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Calendar</text>
+  
+  
+  <rect x="28" y="291" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="303" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Messages</text>
+  <rect x="184" y="289" width="24" height="18" rx="9" fill="#6D5DF6"/><text x="196" y="302" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+  
+  <rect x="28" y="333" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="345" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Invoices</text>
+  
+  
+  <rect x="28" y="375" width="14" height="14" rx="4" fill="#3A365E"/>
+  <text x="52" y="387" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#B9B8CE" text-anchor="start">Team</text>
+  
+
+  <!-- upgrade card -->
+  <rect x="16" y="753" width="204" height="88" rx="12" fill="#1B1B31" stroke="#2C2950"/>
+  <text x="32" y="779" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start">Go Enterprise</text>
+  <text x="32" y="797" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7B7A97" text-anchor="start">Unlimited seats &amp; SSO</text>
+  <rect x="32" y="807" width="172" height="26" rx="13" fill="url(#brand)"/>
+  <text x="118" y="824" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#fff" text-anchor="middle">Upgrade</text>
+
+  <!-- ============ topbar ============ -->
+  <rect x="236" y="0" width="1164" height="66" rx="0" fill="#15142A"/>
+  <line x1="236" y1="66" x2="1400" y2="66" stroke="#2C2950"/>
+  <rect x="264" y="18" width="320" height="30" rx="15" fill="#1B1B31" stroke="#2C2950"/>
+  <circle cx="282" cy="33" r="5.5" fill="none" stroke="#7B7A97" stroke-width="1.6"/>
+  <line x1="286" y1="37" x2="290" y2="41" stroke="#7B7A97" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="300" y="38" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7B7A97" text-anchor="start">Search projects, people, invoices…</text>
+
+  <circle cx="1272" cy="33" r="15" fill="#1B1B31" stroke="#2C2950"/>
+  <path d="M1267 30 a5 5 0 0 1 10 0 c0 5 2 6 2 6 h-14 s2-1 2-6" fill="none" stroke="#B9B8CE" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="1278" cy="27" r="3.5" fill="#F2555A"/>
+  <circle cx="1322" cy="33" r="15" fill="url(#brand)"/>
+  <text x="1322" y="38" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">AL</text>
+  <text x="1346" y="30" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="start">Ada Lovelace</text>
+  <text x="1346" y="44" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="start">Professional</text>
+
+  <!-- ============ page head ============ -->
+  <text x="276" y="116" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">Welcome back, Ada 👋</text>
+  <text x="276" y="140" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#7B7A97" text-anchor="start">Here's what's happened in your workspace since Monday.</text>
+  <rect x="1224" y="98" width="136" height="34" rx="17" fill="url(#brand)"/>
+  <text x="1292" y="120" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">+  New Project</text>
+
+  <!-- ============ KPI cards ============ -->
+  <rect x="276" y="168" width="252" height="104" rx="14" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="294" y="186" width="32" height="32" rx="9" fill="#6D5DF62e"/>
+  <circle cx="310" cy="202" r="6" fill="#6D5DF6"/>
+  <rect x="450" y="190" width="60" height="22" rx="11" fill="#35D39A2b"/><text x="480" y="205" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">+18.2%</text>
+  <text x="294" y="238" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7B7A97" text-anchor="start">Total revenue</text>
+  <text x="294" y="260" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">$132,480</text>
+  <rect x="548" y="168" width="252" height="104" rx="14" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="566" y="186" width="32" height="32" rx="9" fill="#35D39A2e"/>
+  <circle cx="582" cy="202" r="6" fill="#35D39A"/>
+  <rect x="722" y="190" width="60" height="22" rx="11" fill="#35D39A2b"/><text x="752" y="205" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">+9.4%</text>
+  <text x="566" y="238" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7B7A97" text-anchor="start">Active users</text>
+  <text x="566" y="260" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">8,214</text>
+  <rect x="820" y="168" width="252" height="104" rx="14" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="838" y="186" width="32" height="32" rx="9" fill="#56B6FF2e"/>
+  <circle cx="854" cy="202" r="6" fill="#56B6FF"/>
+  <rect x="994" y="190" width="60" height="22" rx="11" fill="#35D39A2b"/><text x="1024" y="205" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">+24.1%</text>
+  <text x="838" y="238" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7B7A97" text-anchor="start">Workflows run</text>
+  <text x="838" y="260" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">1,429</text>
+  <rect x="1092" y="168" width="252" height="104" rx="14" fill="#1B1B31" stroke="#2C2950"/>
+  <rect x="1110" y="186" width="32" height="32" rx="9" fill="#F7B9552e"/>
+  <circle cx="1126" cy="202" r="6" fill="#F7B955"/>
+  <rect x="1266" y="190" width="60" height="22" rx="11" fill="#35D39A2b"/><text x="1296" y="205" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">+12.0%</text>
+  <text x="1110" y="238" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7B7A97" text-anchor="start">Hours saved</text>
+  <text x="1110" y="260" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">318</text>
+
+  <!-- ============ revenue chart ============ -->
+  <rect x="276" y="296" width="700" height="268" rx="16" fill="#1B1B31" stroke="#2C2950"/>
+  <text x="300" y="326" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="start">Revenue overview</text>
+  <text x="300" y="346" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7B7A97" text-anchor="start">Monthly recurring revenue, this year</text>
+  <rect x="856" y="312" width="96" height="26" rx="13" fill="#232042"/>
+  <rect x="858" y="314" width="46" height="22" rx="11" fill="#6D5DF6"/>
+  <text x="881" y="329" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#fff" text-anchor="middle">12M</text>
+  <text x="928" y="329" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#7B7A97" text-anchor="middle">6M</text>
+
+  <line x1="310" y1="372" x2="910" y2="372" stroke="#2C2950" stroke-dasharray="3 5"/>
+  <text x="298" y="376" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">$150k</text>
+  <line x1="310" y1="428" x2="910" y2="428" stroke="#2C2950" stroke-dasharray="3 5"/>
+  <text x="298" y="432" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">$100k</text>
+  <line x1="310" y1="484" x2="910" y2="484" stroke="#2C2950" stroke-dasharray="3 5"/>
+  <text x="298" y="488" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">$50k</text>
+  <line x1="310" y1="540" x2="910" y2="540" stroke="#2C2950" stroke-dasharray="3 5"/>
+  <text x="298" y="544" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="end">$0k</text>
+
+  <path d="M310.0 493.0 L364.5 482.9 L419.1 486.2 L473.6 468.3 L528.2 459.4 L582.7 462.7 L637.3 444.8 L691.8 434.7 L746.4 441.4 L800.9 423.5 L855.5 407.8 L910.0 392.2 L910.0 540 L310 540 Z" fill="url(#area)"/>
+  <path d="M310.0 493.0 L364.5 482.9 L419.1 486.2 L473.6 468.3 L528.2 459.4 L582.7 462.7 L637.3 444.8 L691.8 434.7 L746.4 441.4 L800.9 423.5 L855.5 407.8 L910.0 392.2" fill="none" stroke="#6D5DF6" stroke-width="9" opacity=".3" filter="url(#glow)"/>
+  <path d="M310.0 493.0 L364.5 482.9 L419.1 486.2 L473.6 468.3 L528.2 459.4 L582.7 462.7 L637.3 444.8 L691.8 434.7 L746.4 441.4 L800.9 423.5 L855.5 407.8 L910.0 392.2" fill="none" stroke="#B8A7FF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310.0" cy="493.0" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="364.5" cy="482.9" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="419.1" cy="486.2" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="473.6" cy="468.3" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="528.2" cy="459.4" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="582.7" cy="462.7" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="637.3" cy="444.8" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="691.8" cy="434.7" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="746.4" cy="441.4" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="800.9" cy="423.5" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="855.5" cy="407.8" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <circle cx="910.0" cy="392.2" r="3.8" fill="#0E0D1A" stroke="#B8A7FF" stroke-width="2.2"/>
+  <text x="310" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Jan</text>
+  <text x="364.54545454545456" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Feb</text>
+  <text x="419.0909090909091" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Mar</text>
+  <text x="473.6363636363636" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Apr</text>
+  <text x="528.1818181818182" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">May</text>
+  <text x="582.7272727272727" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Jun</text>
+  <text x="637.2727272727273" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Jul</text>
+  <text x="691.8181818181818" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Aug</text>
+  <text x="746.3636363636364" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Sep</text>
+  <text x="800.909090909091" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Oct</text>
+  <text x="855.4545454545455" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Nov</text>
+  <text x="910" y="562" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">Dec</text>
+
+  <!-- ============ traffic donut ============ -->
+  <rect x="996" y="296" width="364" height="268" rx="16" fill="#1B1B31" stroke="#2C2950"/>
+  <text x="1020" y="326" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="start">Traffic sources</text>
+  <text x="1020" y="346" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7B7A97" text-anchor="start">Where signups came from</text>
+
+  <g transform="translate(1098 452)">
+    <circle r="58" fill="none" stroke="#232042" stroke-width="20"/>
+    <circle r="58" fill="none" stroke="#6D5DF6" stroke-width="20" stroke-dasharray="153 365" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="58" fill="none" stroke="#B8A7FF" stroke-width="20" stroke-dasharray="95 365" stroke-linecap="round" transform="rotate(60)"/>
+    <circle r="58" fill="none" stroke="#35D39A" stroke-width="20" stroke-dasharray="47 365" stroke-linecap="round" transform="rotate(155)"/>
+    <text x="0" y="-2" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">68%</text>
+    <text x="0" y="16" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#7B7A97" text-anchor="middle">organic</text>
+  </g>
+
+  <circle cx="1198" cy="400" r="5" fill="#6D5DF6"/>
+  <text x="1214" y="404" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Organic</text>
+  <text x="1336" y="404" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="end">42%</text>
+  <circle cx="1198" cy="430" r="5" fill="#B8A7FF"/>
+  <text x="1214" y="434" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Direct</text>
+  <text x="1336" y="434" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="end">26%</text>
+  <circle cx="1198" cy="460" r="5" fill="#35D39A"/>
+  <text x="1214" y="464" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Referral</text>
+  <text x="1336" y="464" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="end">19%</text>
+  <circle cx="1198" cy="490" r="5" fill="#56B6FF"/>
+  <text x="1214" y="494" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Social</text>
+  <text x="1336" y="494" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="end">13%</text>
+
+  <!-- ============ invoices table ============ -->
+  <rect x="276" y="588" width="1084" height="250" rx="16" fill="#1B1B31" stroke="#2C2950"/>
+  <text x="300" y="618" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="start">Recent invoices</text>
+  <text x="1336" y="618" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B8A7FF" text-anchor="end">View all</text>
+
+  <text x="300" y="648" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#7B7A97" text-anchor="start">CLIENT</text>
+  <text x="700" y="648" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#7B7A97" text-anchor="start">PLAN</text>
+  <text x="940" y="648" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#7B7A97" text-anchor="start">AMOUNT</text>
+  <text x="1160" y="648" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#7B7A97" text-anchor="start">STATUS</text>
+  <line x1="300" y1="660" x2="1336" y2="660" stroke="#2C2950"/>
+
+  <circle cx="312" cy="690" r="12" fill="url(#brand)" opacity="1"/>
+  <text x="312" y="694" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">AK</text>
+  <text x="332" y="694" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Northwind Labs</text>
+  <text x="700" y="694" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Enterprise</text>
+  <text x="940" y="694" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">$12,400</text>
+  <rect x="1160" y="679" width="66" height="22" rx="11" fill="#35D39A2b"/><text x="1193" y="694" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">Paid</text>
+  <line x1="300" y1="710" x2="1336" y2="710" stroke="#2C2950" opacity=".6"/>
+  <circle cx="312" cy="730" r="12" fill="url(#brand)" opacity="0.88"/>
+  <text x="312" y="734" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">MR</text>
+  <text x="332" y="734" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Vertex Financial</text>
+  <text x="700" y="734" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Enterprise</text>
+  <text x="940" y="734" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">$8,900</text>
+  <rect x="1160" y="719" width="66" height="22" rx="11" fill="#F7B9552b"/><text x="1193" y="734" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#F7B955" text-anchor="middle">Pending</text>
+  <line x1="300" y1="750" x2="1336" y2="750" stroke="#2C2950" opacity=".6"/>
+  <circle cx="312" cy="770" r="12" fill="url(#brand)" opacity="0.76"/>
+  <text x="312" y="774" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">JD</text>
+  <text x="332" y="774" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Apexly</text>
+  <text x="700" y="774" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Professional</text>
+  <text x="940" y="774" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">$4,250</text>
+  <rect x="1160" y="759" width="66" height="22" rx="11" fill="#35D39A2b"/><text x="1193" y="774" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#35D39A" text-anchor="middle">Paid</text>
+  <line x1="300" y1="790" x2="1336" y2="790" stroke="#2C2950" opacity=".6"/>
+  <circle cx="312" cy="810" r="12" fill="url(#brand)" opacity="0.64"/>
+  <text x="312" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">SL</text>
+  <text x="332" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Quantum Retail</text>
+  <text x="700" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#B9B8CE" text-anchor="start">Professional</text>
+  <text x="940" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start">$16,800</text>
+  <rect x="1160" y="799" width="66" height="22" rx="11" fill="#F2555A2b"/><text x="1193" y="814" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#F2555A" text-anchor="middle">Overdue</text>
+  
+</svg>

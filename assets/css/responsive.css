@@ -1,0 +1,201 @@
+/* =========================================================
+   Nebula AI — Responsive Layer
+   Breakpoints: 1440 / 1200 / 1024 / 900 / 768 / 560 / 480
+   ========================================================= */
+
+/* ---------- Large desktop 1920+ ---------- */
+@media (min-width: 1700px) {
+  :root { --container: 1360px; }
+  .hero__inner { gap: 80px; }
+}
+
+/* ---------- Laptop 1440 ---------- */
+@media (max-width: 1440px) {
+  :root { --container: 1180px; }
+}
+
+/* ---------- Small laptop 1200 ---------- */
+@media (max-width: 1200px) {
+  .footer__grid { grid-template-columns: 1.5fr 1fr 1fr 1.4fr; }
+  .footer__col--hide { display: none; }
+  .float-card--tl { left: -8%; }
+  .float-card--br { right: -6%; }
+}
+
+/* ---------- Tablet landscape 1024 ---------- */
+@media (max-width: 1024px) {
+  :root { --nav-h: 70px; }
+
+  .nav-menu { display: none; }
+  .hamburger { display: flex; }
+  .nav-actions .btn--ghost { display: none; }
+
+  .hero { min-height: auto; padding-top: calc(var(--nav-h) + 60px); }
+  .hero__inner { grid-template-columns: 1fr; text-align: center; }
+  .hero__desc { margin-inline: auto; }
+  .hero__cta, .hero__meta { justify-content: center; }
+  .hero__visual { margin-top: 20px; }
+  .scroll-indicator { display: none; }
+
+  .grid-4, .stats { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .feature-grid, .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid .price-card--featured { grid-column: span 2; }
+
+  .split, .contact-grid, .featured-post { grid-template-columns: 1fr; }
+  .split .split__media { order: -1; }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .footer__about { grid-column: span 2; }
+}
+
+/* ---------- Tablet 900 ---------- */
+@media (max-width: 900px) {
+  .article__hero { aspect-ratio: 16 / 9; }
+
+  /* Not enough room to flank the laptop — drop the tablet, keep the phone.
+     Keep the phone fully inside the stage; the stage clips its overflow. */
+  .showcase { padding-inline: clamp(14px, 5vw, 40px); }
+  .tablet { display: none; }
+  .phone { right: 12px; bottom: 14px; width: clamp(58px, 13%, 84px); }
+  .showcase__points { grid-template-columns: 1fr; gap: 16px; }
+}
+
+/* ---------- Mobile 768 ---------- */
+@media (max-width: 768px) {
+  :root {
+    --section-y: 64px;
+    --radius-lg: 20px;
+  }
+
+  body { font-size: 15px; }
+
+  .grid-2, .grid-3, .grid-4,
+  .feature-grid, .pricing-grid, .stats { grid-template-columns: 1fr; }
+  .pricing-grid .price-card--featured { grid-column: auto; }
+
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .hero__cta .btn { width: 100%; }
+  .hero__meta { flex-direction: column; gap: 14px; }
+  .float-card { display: none; }
+  .mockup__stats { grid-template-columns: 1fr; }
+  .mockup__stats .mini-stat:nth-child(3) { display: none; }
+
+  /* Flex/grid children default to min-width:auto, so a long row of chips or a
+     240px-min search box refuses to shrink and blows out of its parent.
+     min-width:0 lets them actually fit; the chips then scroll on their own. */
+  .blog-toolbar { flex-direction: column; align-items: stretch; }
+  .blog-toolbar > * { min-width: 0; width: 100%; }
+  .search { max-width: none; min-width: 0; width: 100%; }
+  .chips {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { white-space: nowrap; flex: none; }
+
+  .cta-banner__actions { flex-direction: column; }
+  .cta-banner__actions .btn { width: 100%; }
+
+  /* The pill already holds its submit inside, so it just goes full width. */
+  .newsletter__field { max-width: 420px; }
+
+  .footer__grid { grid-template-columns: 1fr; text-align: left; }
+  .footer__about { grid-column: auto; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+  .footer__bottom nav { justify-content: center; gap: 16px; }
+
+  .timeline::before { left: 21px; }
+  .timeline__item { grid-template-columns: 44px 1fr; gap: 16px; }
+  .timeline__dot { width: 44px; height: 44px; font-size: .9rem; }
+
+  .slider__nav { gap: 12px; }
+  .toasts { top: auto; bottom: 18px; right: 12px; left: 12px; width: auto; }
+  .back-top { right: 16px; bottom: 76px; }
+
+  .article-body p, .article-body ul li { font-size: .97rem; }
+  .author-box { flex-direction: column; text-align: center; }
+}
+
+/* ---------- Small mobile 560 ---------- */
+@media (max-width: 560px) {
+  .section-head { margin-bottom: 34px; }
+  .accordion__trigger { padding: 16px 18px; font-size: .93rem; }
+  .accordion__panel p { padding: 0 18px 18px; }
+  .price-card__desc { min-height: auto; }
+  .modal__box { padding: 22px; }
+
+  /* On the narrowest screens the phone overlaps too much of the dashboard. */
+  .phone { display: none; }
+  .showcase { padding: 22px 16px 18px; }
+}
+
+/* ---------- Extra small 480 ---------- */
+@media (max-width: 480px) {
+  :root { --section-y: 54px; }
+
+  .container { padding-inline: 16px; }
+  .card { padding: 20px; }
+  .btn { padding: 12px 20px; font-size: .88rem; }
+  .btn--lg { padding: 14px 24px; font-size: .93rem; }
+  .logo { font-size: 1.05rem; }
+  .logo__image { height: 32px; }
+  .logo__mark { width: 32px; height: 32px; }
+  .badge { font-size: .74rem; }
+  .badge__pill { font-size: .62rem; }
+
+  .marquee__track { gap: 36px; }
+  .marquee__item { font-size: .92rem; }
+
+  .drawer { width: 100%; }
+  .comment { flex-direction: column; gap: 10px; }
+
+  /* Any search box in a widget header (team, dashboard) must be able to shrink. */
+  .widget__head { flex-wrap: wrap; }
+  .widget__head .search { min-width: 0; width: 100%; max-width: none; }
+
+  /* Tables stay usable by scrolling inside their wrapper, never the page. */
+  .table-wrap { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Tab strips scroll rather than overflow. */
+  .tabs { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+
+  .page-head, .page-head__actions { width: 100%; }
+  .page-head__actions .btn { flex: 1; }
+}
+
+/* ---------- Small phones 380 (iPhone SE / Galaxy S) ---------- */
+@media (max-width: 380px) {
+  .container { padding-inline: 14px; }
+  .card { padding: 18px; }
+
+  h1 { font-size: clamp(1.85rem, 8.5vw, 2.3rem); }
+  h2 { font-size: clamp(1.5rem, 6.5vw, 1.9rem); }
+
+  .badge { padding: 6px 12px 6px 6px; font-size: .7rem; }
+  .btn { padding: 11px 16px; font-size: .84rem; }
+
+  /* 6 boxes + gaps have to fit inside the padded container. */
+  .otp { gap: 6px; }
+  .otp input { width: clamp(38px, 13vw, 46px); height: 52px; font-size: 1.2rem; border-radius: 11px; }
+
+  .auth-card { padding: 20px 16px; }
+  .social-auth { grid-template-columns: 1fr; }
+
+  .pagination { flex-wrap: wrap; }
+  .pagination button { min-width: 38px; height: 38px; }
+
+  .footer__bottom nav { gap: 12px; font-size: .8rem; }
+  .slider__nav { gap: 10px; }
+  .testimonial { padding-inline: 16px; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .navbar, .drawer, .overlay, .back-top, .cursor-glow,
+  .loader, .toasts, .footer, .scroll-indicator { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card, .article-body { break-inside: avoid; }
+}

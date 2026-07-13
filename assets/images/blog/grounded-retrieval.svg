@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Abstract orbital diagram representing grounded retrieval">
+  <title>Abstract orbital diagram representing grounded retrieval</title>
+
+  <defs>
+    <linearGradient id="bggroundedretrieval" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09090C"/>
+      <stop offset=".45" stop-color="#12121D"/>
+      <stop offset="1" stop-color="#1F1E34"/>
+    </linearGradient>
+    <radialGradient id="glowAgroundedretrieval" cx="22%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#B19CFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#B19CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBgroundedretrieval" cx="82%" cy="88%" r="58%">
+      <stop offset="0" stop-color="#6D5DF6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#6D5DF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokegroundedretrieval" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8A7FF"/>
+      <stop offset="1" stop-color="#6D5DF6"/>
+    </linearGradient>
+    <linearGradient id="fillgroundedretrieval" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B19CFF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#B19CFF" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="softgroundedretrieval" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="graingroundedretrieval">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+    <pattern id="gridgroundedretrieval" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#6D5DF6" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipgroundedretrieval"><rect width="800" height="450" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#clipgroundedretrieval)">
+
+  <rect width="800" height="450" fill="url(#bggroundedretrieval)"/>
+  <rect width="800" height="450" fill="url(#gridgroundedretrieval)"/>
+  <rect width="800" height="450" fill="url(#glowAgroundedretrieval)"/>
+  <rect width="800" height="450" fill="url(#glowBgroundedretrieval)"/>
+
+    <g transform="translate(400 225)">
+      
+        <ellipse rx="170" ry="92" transform="rotate(-18)" fill="none"
+          stroke="url(#strokegroundedretrieval)" stroke-opacity="0.65" stroke-width="1.8"/>
+        <ellipse rx="130" ry="60" transform="rotate(22)" fill="none"
+          stroke="url(#strokegroundedretrieval)" stroke-opacity="0.5" stroke-width="1.8"/>
+        <ellipse rx="200" ry="70" transform="rotate(62)" fill="none"
+          stroke="url(#strokegroundedretrieval)" stroke-opacity="0.35000000000000003" stroke-width="1.8"/>
+      <circle r="54" fill="#B19CFF" opacity=".2" filter="url(#softgroundedretrieval)"/>
+      <circle r="34" fill="#12121D" stroke="url(#strokegroundedretrieval)" stroke-width="2.5"/>
+      <path d="M0 -18 L15 -9 V9 L0 18 L-15 9 V-9 Z" fill="none" stroke="#B8A7FF" stroke-width="2.2" stroke-linejoin="round"/>
+      
+        <circle cx="162" cy="-30" r="7" fill="#09090C" stroke="#B19CFF" stroke-width="2.5"/>
+        <circle cx="-120" cy="55" r="7" fill="#09090C" stroke="#B19CFF" stroke-width="2.5"/>
+        <circle cx="70" cy="92" r="7" fill="#09090C" stroke="#B19CFF" stroke-width="2.5"/>
+    </g>
+<rect width="800" height="450" filter="url(#graingroundedretrieval)" opacity=".55"/>
+  </g>
+</svg>
