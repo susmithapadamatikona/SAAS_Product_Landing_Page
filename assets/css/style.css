@@ -44,6 +44,9 @@
   --gradient-btn: linear-gradient(90deg, #6d5df6, #8a7cff);
   --gradient-text: linear-gradient(90deg, #ffffff 0%, #b8a7ff 55%, #6d5df6 100%);
   --gradient-card: linear-gradient(180deg, #1a1a2b, #12121d);
+  /* Every card surface shifts to this on hover. */
+  --gradient-card-hover: linear-gradient(180deg, #272348, #1a1834);
+  --card-hover-border: #6d5df6;
   --gradient-border: linear-gradient(135deg, rgba(177, 156, 255, .55), rgba(109, 93, 246, .05) 45%, rgba(177, 156, 255, .35));
   --hero-glow: radial-gradient(circle, rgba(142, 122, 255, .45) 0%, rgba(109, 93, 246, .25) 35%, rgba(9, 9, 12, 0) 75%);
   --glow: 0 0 20px rgba(109, 93, 246, .35), 0 0 60px rgba(109, 93, 246, .15);
@@ -82,6 +85,8 @@
   --gradient-bg: linear-gradient(135deg, #ffffff 0%, #f6f5fc 40%, #eceaf9 100%);
   --gradient-text: linear-gradient(90deg, #1a1836 0%, #6d5df6 60%, #8a7cff 100%);
   --gradient-card: linear-gradient(180deg, #ffffff, #f7f6fd);
+  --gradient-card-hover: linear-gradient(180deg, #ffffff, #ece9fc);
+  --card-hover-border: #8a7cff;
   --gradient-border: linear-gradient(135deg, rgba(109, 93, 246, .35), rgba(109, 93, 246, .04) 45%, rgba(109, 93, 246, .25));
   --hero-glow: radial-gradient(circle, rgba(142, 122, 255, .28) 0%, rgba(109, 93, 246, .12) 35%, rgba(255, 255, 255, 0) 75%);
   --glow: 0 0 20px rgba(109, 93, 246, .18), 0 0 60px rgba(109, 93, 246, .08);

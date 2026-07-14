@@ -236,6 +236,96 @@
 .card:hover .card__icon { transform: translateZ(24px) translateY(-3px) rotate(-6deg) scale(1.08); }
 
 /* =========================================================
+   Card hover — colour shift
+   Every card-like surface on the site brightens to a purple-tinted
+   background with a purple border when the cursor lands on it.
+   ========================================================= */
+.card,
+.kpi,
+.widget,
+.stat,
+.post,
+.price-card,
+.team-card,
+.info-card,
+.value-card,
+.logo-tile,
+.accordion__item,
+.upgrade-card,
+.auth-card,
+.profile-hero,
+.event,
+.task,
+.steps-media,
+.showcase,
+.cta-banner,
+.map,
+.table-wrap {
+  background-image: var(--gradient-card);
+  transition:
+    background-image .4s var(--ease),
+    background-color .4s var(--ease),
+    border-color .35s var(--ease),
+    box-shadow .4s var(--ease),
+    transform .4s var(--ease-out);
+}
+
+.card:hover,
+.kpi:hover,
+.widget:hover,
+.stat:hover,
+.post:hover,
+.price-card:hover,
+.team-card:hover,
+.info-card:hover,
+.value-card:hover,
+.logo-tile:hover,
+.accordion__item:hover,
+.upgrade-card:hover,
+.event:hover,
+.task:hover,
+.steps-media:hover {
+  background-image: var(--gradient-card-hover);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--glow), var(--shadow-card);
+}
+
+/* The bits inside the card pick up the accent too. */
+.card:hover .card__icon,
+.info-card:hover .card__icon,
+.value-card:hover .card__icon {
+  border-color: var(--purple);
+  background: linear-gradient(145deg, rgba(109, 93, 246, .38), rgba(109, 93, 246, .1));
+  color: #fff;
+}
+.card:hover h3,
+.card:hover h4,
+.value-card:hover h3,
+.info-card:hover h4 { color: var(--purple-neon); }
+
+.stat:hover .stat__label,
+.kpi:hover .kpi__label { color: var(--text-2); }
+
+/* Keep the featured pricing card distinct — it is already purple, so it goes
+   brighter rather than simply matching its neighbours. */
+.price-card--featured:hover {
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(109, 93, 246, .34), transparent 62%),
+    var(--gradient-card-hover);
+  border-color: var(--purple-hover);
+  box-shadow: var(--glow-strong), var(--shadow-card);
+}
+
+/* Rows / list items get a lighter tint rather than the full card treatment. */
+.activity__item:hover,
+.dropdown__item:hover,
+.data-table tbody tr:hover,
+.table tbody tr:hover,
+.comment:hover {
+  background-color: rgba(109, 93, 246, .12);
+}
+
+/* =========================================================
    Live (always-running) animations
    ========================================================= */
 
