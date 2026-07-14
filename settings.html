@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#09090C" />
   <meta name="robots" content="noindex, nofollow" />
 
-  <title>Settings | Nebula AI</title>
-  <meta name="description" content="Configure your Nebula AI workspace: general, security, notifications, language and appearance." />
-  <link rel="canonical" href="https://nebula.ai/settings.html" />
+  <title>Settings | Stackly AI</title>
+  <meta name="description" content="Configure your Stackly AI workspace: general, security, notifications, language and appearance." />
+  <link rel="canonical" href="https://stackly.ai/settings.html" />
 
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,7 @@
       <div class="sidebar__head">
         <a class="logo" href="index.html">
           <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 17 9 5 9-5" /><path d="m3 12 9 5 9-5" /></svg></span>
-          <span>Nebula<span class="text-purple">AI</span></span>
+          <span>Stackly<span class="text-purple">AI</span></span>
         </a>
         <button class="sidebar__collapse" aria-label="Collapse sidebar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
@@ -61,8 +61,13 @@
         <div class="upgrade-card">
           <h4>Go Enterprise</h4>
           <p>Unlimited seats, SSO and a 99.99% SLA.</p>
-          <a class="btn btn--primary btn--sm btn--block" href="pricing.html">Upgrade</a>
-        </div>
+          <a class="btn btn--primary btn--sm btn--block" href="404.html">Upgrade</a>
+                <button class="sidebar__close" type="button" data-sidebar-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
         <button class="side-link" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="m16 17 5-5-5-5M21 12H9"/></svg><span class="sidebar__text">Logout</span></button>
       </div>
     </aside>
@@ -131,14 +136,14 @@
       </header>
 
       <main class="app__content" id="main">
-        <div class="page-head" data-reveal="up">
+        <div class="page-head" data-aos="fade-up">
           <div>
             <h1>Settings</h1>
             <p>Workspace and account preferences.</p>
           </div>
         </div>
 
-        <div class="tabs" data-reveal="up" role="tablist">
+        <div class="tabs" data-aos="fade-up" role="tablist">
           <button class="tab is-active" data-tab="tabGeneral" role="tab" aria-selected="true">General</button>
           <button class="tab" data-tab="tabSecurity" role="tab" aria-selected="false">Security</button>
           <button class="tab" data-tab="tabNotifications" role="tab" aria-selected="false">Notifications</button>
@@ -147,14 +152,14 @@
 
         <!-- General -->
         <div class="tab-panel is-active" id="tabGeneral">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head"><div><h3>General</h3><p>Basic workspace configuration.</p></div></div>
 
             <form data-validate novalidate>
               <div class="grid grid-2" style="gap:0 18px">
                 <div class="field">
                   <label for="workspaceName">Workspace name <span class="req">*</span></label>
-                  <input class="input" id="workspaceName" name="workspaceName" type="text" value="Nebula Workspace" data-rule="required|min" data-min="3" data-label="Workspace name" />
+                  <input class="input" id="workspaceName" name="workspaceName" type="text" value="Stackly Workspace" data-rule="required|min" data-min="3" data-label="Workspace name" />
                   <span class="error-msg"></span>
                 </div>
 
@@ -190,7 +195,7 @@
 
         <!-- Security -->
         <div class="tab-panel" id="tabSecurity">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head"><div><h3>Security</h3><p>Protect your account and workspace.</p></div></div>
 
             
@@ -243,7 +248,7 @@
               </div>
           </section>
 
-          <section class="widget danger-zone mt-md" data-reveal="up">
+          <section class="widget data-aos="fade-up" danger-zone mt-md" data-aos="fade-up">
             <div class="widget__head"><div><h3 style="color:var(--danger)">Danger zone</h3><p>These actions are permanent and cannot be undone.</p></div></div>
 
             
@@ -259,7 +264,7 @@
 
         <!-- Notifications -->
         <div class="tab-panel" id="tabNotifications">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head"><div><h3>Notifications</h3><p>Choose what reaches you, and where.</p></div></div>
 
             
@@ -339,7 +344,7 @@
 
         <!-- Appearance -->
         <div class="tab-panel" id="tabAppearance">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head"><div><h3>Appearance</h3><p>Pick the theme that suits your eyes.</p></div></div>
 
             <div class="theme-options">
@@ -404,6 +409,8 @@
       </main>
     </div>
   </div>
+
+  <script src="assets/js/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/validation.js"></script>

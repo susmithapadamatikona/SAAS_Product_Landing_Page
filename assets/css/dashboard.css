@@ -34,18 +34,26 @@
   margin-bottom: 8px;
   border-bottom: 1px solid var(--divider);
 }
-.sidebar__collapse {
-  display: grid;
+/* Only meaningful when the sidebar is a mobile drawer — on desktop it is a
+   static column with nothing to close. */
+.sidebar__close {
+  display: none;
   place-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   border: 1px solid var(--border-soft);
-  color: var(--text-muted);
-  transition: all .3s var(--ease);
+  color: var(--text-2);
+  background: rgba(255, 255, 255, .03);
+  transition: color .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease);
 }
-.sidebar__collapse:hover { color: var(--purple-neon); border-color: var(--purple); }
-.sidebar__collapse svg { width: 16px; height: 16px; }
+.sidebar__close:hover {
+  color: var(--purple-neon);
+  border-color: var(--purple);
+  transform: rotate(90deg);
+}
+.sidebar__close svg { width: 18px; height: 18px; }
 
 .sidebar__label {
   padding: 16px 12px 8px;
@@ -99,25 +107,6 @@
 }
 
 .sidebar__foot { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--divider); display: grid; gap: 4px; }
-.upgrade-card {
-  padding: 18px;
-  margin-bottom: 12px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border-soft);
-  background: radial-gradient(ellipse at 50% 0%, rgba(109, 93, 246, .25), transparent 70%), var(--gradient-card);
-  text-align: center;
-}
-.upgrade-card h4 { font-size: .95rem; margin-bottom: 6px; }
-.upgrade-card p { font-size: .78rem; margin-bottom: 14px; }
-
-.app.is-collapsed .sidebar__text,
-.app.is-collapsed .sidebar__label,
-.app.is-collapsed .upgrade-card,
-.app.is-collapsed .side-link__badge,
-.app.is-collapsed .logo span { display: none; }
-.app.is-collapsed .side-link { justify-content: center; padding-inline: 8px; }
-.app.is-collapsed .sidebar__head { justify-content: center; }
-.app.is-collapsed .sidebar__collapse { display: none; }
 
 /* ---------- Main column ---------- */
 .app__main { display: flex; flex-direction: column; min-width: 0; }
@@ -737,18 +726,22 @@
     top: 0;
     left: 0;
     width: 274px;
+    /* Must sit ABOVE .overlay (z-index 940). At its desktop z-index of 60 the
+       dimming overlay painted straight over the open drawer, which greyed out
+       every menu item and swallowed taps. The marketing .drawer uses 950 for
+       exactly this reason. */
+    z-index: 950;
     transform: translateX(-105%);
     /* Keep the parked sidebar out of the tab order (see .drawer). */
     visibility: hidden;
     transition: transform .4s var(--ease-out), visibility .4s;
     box-shadow: var(--shadow-card);
+    /* Opaque: the overlay behind it must not bleed through. */
+    background: var(--bg-secondary);
   }
   .sidebar.is-open { transform: translateX(0); visibility: visible; }
-  .app.is-collapsed .sidebar__text,
-  .app.is-collapsed .sidebar__label,
-  .app.is-collapsed .upgrade-card,
-  .app.is-collapsed .logo span { display: revert; }
-  .app.is-collapsed .side-link { justify-content: flex-start; padding-inline: 12px; }
+  .sidebar__close { display: grid; }
+
   .topbar__toggle { display: grid; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .dash-grid, .dash-grid--even, .dash-grid--thirds { grid-template-columns: 1fr; }

@@ -1,4 +1,4 @@
-# Nebula AI — Premium AI SaaS Website
+# Stackly AI — Premium AI SaaS Website
 
 A complete, production-ready AI SaaS product website built with **HTML5, CSS3 and vanilla JavaScript only**.
 No React, no Bootstrap, no Tailwind, no jQuery, no build step, no backend.
@@ -68,7 +68,7 @@ The palette lives in CSS custom properties at the top of `style.css`. A `[data-t
 block overrides them, so switching themes re-skins the whole site — charts included, since
 `chart.js` reads its colours from the same variables and repaints on `themechange`.
 
-Nebula is **dark-first**: with no stored preference the site uses dark, regardless of the OS
+Stackly is **dark-first**: with no stored preference the site uses dark, regardless of the OS
 setting. The OS is only followed once a user explicitly picks *System* in Settings → Appearance.
 
 ## Charts

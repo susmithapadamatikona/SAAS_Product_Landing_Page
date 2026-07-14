@@ -368,6 +368,24 @@
   }
 
   /* ---------------------------------------------------------------
+     "Go back" (404 page)
+     --------------------------------------------------------------- */
+  function initGoBack() {
+    $$('[data-go-back]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        // Landing straight on the 404 (typed URL, bookmark, external link) means
+        // there is nothing to go back TO — fall back to the home page rather
+        // than leaving the button dead.
+        var hasHistory = window.history.length > 1 && document.referrer &&
+          new URL(document.referrer, location.href).origin === location.origin;
+
+        if (hasHistory) window.history.back();
+        else window.location.href = 'index.html';
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------------
      Smooth scroll for in-page anchors
      --------------------------------------------------------------- */
   function initSmoothScroll() {
@@ -582,6 +600,7 @@
     initParticles();
     initStars();
     initSmoothScroll();
+    initGoBack();
     initModals();
     initNewsletter();
     initProgress();

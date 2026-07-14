@@ -36,6 +36,7 @@
   .hero__cta, .hero__meta { justify-content: center; }
   .hero__visual { margin-top: 20px; }
   .scroll-indicator { display: none; }
+  .hero__proof, .feature-highlights { grid-template-columns: repeat(2, 1fr); }
 
   .grid-4, .stats { grid-template-columns: repeat(2, 1fr); }
   .grid-3, .feature-grid, .pricing-grid { grid-template-columns: repeat(2, 1fr); }
@@ -76,6 +77,7 @@
   .hero__cta { flex-direction: column; align-items: stretch; }
   .hero__cta .btn { width: 100%; }
   .hero__meta { flex-direction: column; gap: 14px; }
+  .hero__proof, .feature-highlights { grid-template-columns: 1fr; }
   .float-card { display: none; }
   .mockup__stats { grid-template-columns: 1fr; }
   .mockup__stats .mini-stat:nth-child(3) { display: none; }
@@ -120,6 +122,13 @@
 
 /* ---------- Small mobile 560 ---------- */
 @media (max-width: 560px) {
+  /* On a phone the header keeps only the logo and the menu button. The
+     "Get Started" pill was crowding the hamburger against the screen edge,
+     and both Login and Get Started already sit inside the drawer. */
+  .nav-actions .btn { display: none; }
+  .nav-actions { gap: 0; }
+  .navbar__inner { gap: 12px; }
+
   .section-head { margin-bottom: 34px; }
   .accordion__trigger { padding: 16px 18px; font-size: .93rem; }
   .accordion__panel p { padding: 0 18px 18px; }

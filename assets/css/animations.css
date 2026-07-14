@@ -135,7 +135,192 @@
   animation: gradient-shift 9s var(--ease) infinite;
 }
 
-/* ---------- Scroll reveal ---------- */
+/* =========================================================
+   AOS — Animate On Scroll
+   Driven by assets/js/aos.js. Every element starts in its
+   "from" state and transitions to rest when .aos-animate lands.
+   ========================================================= */
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform, filter;
+  transition-duration: var(--aos-duration, 700ms);
+  transition-delay: var(--aos-delay, 0ms);
+  transition-timing-function: var(--ease-out);
+  will-change: opacity, transform;
+}
+
+/* Fail-safe: with scripting disabled the engine never runs, so the content
+   must not be left invisible. */
+@media (scripting: none) {
+  [data-aos] { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
+
+
+/* Perspective is needed on the PARENT for the flips to read as 3D. */
+[data-aos^='flip'],
+[data-aos='rotate-in'],
+[data-aos='swing-in'] {
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* ---- from-states ---- */
+[data-aos='fade']          { transform: none; }
+[data-aos='fade-up']       { transform: translate3d(0, 40px, 0); }
+[data-aos='fade-down']     { transform: translate3d(0, -40px, 0); }
+[data-aos='fade-right']    { transform: translate3d(-48px, 0, 0); }
+[data-aos='fade-left']     { transform: translate3d(48px, 0, 0); }
+
+[data-aos='zoom-in']       { transform: scale(.88); }
+[data-aos='zoom-out']      { transform: scale(1.12); }
+[data-aos='zoom-in-up']    { transform: scale(.9) translate3d(0, 40px, 0); }
+
+/* 3D */
+[data-aos='flip-up']       { transform: rotateX(-70deg); transform-origin: center bottom; }
+[data-aos='flip-down']     { transform: rotateX(70deg);  transform-origin: center top; }
+[data-aos='flip-left']     { transform: rotateY(70deg);  transform-origin: right center; }
+[data-aos='flip-right']    { transform: rotateY(-70deg); transform-origin: left center; }
+[data-aos='rotate-in']     { transform: rotate3d(0, 0, 1, -8deg) scale(.92); }
+[data-aos='swing-in']      { transform: rotateX(-45deg) translate3d(0, 30px, 0); transform-origin: top center; }
+
+[data-aos='blur-in']       { filter: blur(12px); transform: scale(1.03); }
+
+/* ---- rest state ---- */
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1) rotate(0) rotateX(0) rotateY(0);
+  filter: none;
+}
+
+/* ---- mobile: no sideways travel ----
+   A horizontal reveal parks the element OUTSIDE the viewport while it waits to
+   animate, which makes the document wider than the screen and lets the whole
+   page slide left (the header and hero end up half off-screen). Reveal
+   vertically on narrow screens so nothing ever sits outside the viewport.
+   NB: must come AFTER the from-states above, or the base rules win. */
+@media (max-width: 768px) {
+  [data-aos='fade-left'],
+  [data-aos='fade-right'] { transform: translate3d(0, 32px, 0); }
+
+  [data-aos='flip-left'],
+  [data-aos='flip-right'] {
+    transform: rotateX(-45deg);
+    transform-origin: center bottom;
+  }
+
+  [data-aos='rotate-in'] { transform: scale(.94); }
+  [data-aos='zoom-out'] { transform: scale(1.04); }
+}
+
+/* =========================================================
+   3D interactions
+   ========================================================= */
+
+/* Card lifts toward the viewer and catches the light. */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform .5s var(--ease-out), box-shadow .5s var(--ease);
+}
+.card-3d:hover {
+  transform: perspective(900px) translateZ(18px) rotateX(3deg) translateY(-6px);
+  box-shadow: var(--glow-strong), var(--shadow-card);
+}
+
+/* Buttons press "into" the page. */
+.btn { transform-style: preserve-3d; }
+.btn:active { transform: translateY(1px) scale(.97); }
+
+/* Icon pops forward on card hover. */
+.card:hover .card__icon { transform: translateZ(24px) translateY(-3px) rotate(-6deg) scale(1.08); }
+
+/* =========================================================
+   Live (always-running) animations
+   ========================================================= */
+
+/* A quietly breathing glow on primary CTAs. */
+.btn--primary { animation: breathe 4.5s var(--ease) infinite; }
+.btn--primary:hover { animation-play-state: paused; }
+@keyframes breathe {
+  0%, 100% { box-shadow: 0 0 20px rgba(109, 93, 246, .35), 0 0 60px rgba(109, 93, 246, .15); }
+  50%      { box-shadow: 0 0 28px rgba(109, 93, 246, .55), 0 0 80px rgba(109, 93, 246, .25); }
+}
+
+/* Live "New" pill on the badge. */
+.badge__pill { position: relative; overflow: hidden; }
+.badge__pill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .45), transparent);
+  transform: translateX(-100%);
+  animation: sweep 3s var(--ease) infinite;
+}
+@keyframes sweep {
+  0%, 60% { transform: translateX(-100%); }
+  100%    { transform: translateX(100%); }
+}
+
+/* The gradient in headings drifts. */
+.gradient-text {
+  background-size: 200% auto;
+  animation: text-drift 7s var(--ease) infinite;
+}
+@keyframes text-drift {
+  0%, 100% { background-position: 0% center; }
+  50%      { background-position: 100% center; }
+}
+
+/* Live status dot (badges, "online" chips). */
+.live-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+}
+.live-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--success);
+  animation: ping 1.8s var(--ease) infinite;
+}
+
+/* Section eyebrows fade in their letter-spacing. */
+.eyebrow { transition: letter-spacing .5s var(--ease); }
+.section:hover > .container > .section-head .eyebrow { letter-spacing: .22em; }
+
+/* =========================================================
+   Global transitions — nothing snaps
+   ========================================================= */
+a,
+button,
+input,
+select,
+textarea,
+.card,
+.chip,
+.pill,
+.icon-btn,
+.side-link,
+.social-btn,
+.accordion__item,
+.kpi,
+.stat {
+  transition:
+    color .3s var(--ease),
+    background-color .3s var(--ease),
+    border-color .3s var(--ease),
+    box-shadow .35s var(--ease),
+    transform .35s var(--ease-out),
+    opacity .3s var(--ease);
+}
+
+/* ---------- Scroll reveal (legacy [data-reveal], still supported) ---------- */
 [data-reveal] {
   opacity: 0;
   transition:
@@ -220,5 +405,20 @@
     scroll-behavior: auto !important;
   }
   [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+  /* AOS + the always-running effects must all stand down. */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .btn--primary,
+  .gradient-text,
+  .badge__pill::after,
+  .live-dot::after { animation: none !important; }
+  .card-3d:hover,
+  .card:hover .card__icon { transform: none !important; }
+
   .cursor-glow { display: none; }
 }

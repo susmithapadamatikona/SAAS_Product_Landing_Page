@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#09090C" />
   <meta name="robots" content="noindex, nofollow" />
 
-  <title>Analytics | Nebula AI</title>
+  <title>Analytics | Stackly AI</title>
   <meta name="description" content="Deep-dive analytics: active users, retention cohorts, device mix and conversion funnels." />
-  <link rel="canonical" href="https://nebula.ai/analytics.html" />
+  <link rel="canonical" href="https://stackly.ai/analytics.html" />
 
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,7 @@
       <div class="sidebar__head">
         <a class="logo" href="index.html">
           <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 17 9 5 9-5" /><path d="m3 12 9 5 9-5" /></svg></span>
-          <span>Nebula<span class="text-purple">AI</span></span>
+          <span>Stackly<span class="text-purple">AI</span></span>
         </a>
         <button class="sidebar__collapse" aria-label="Collapse sidebar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
@@ -61,8 +61,13 @@
         <div class="upgrade-card">
           <h4>Go Enterprise</h4>
           <p>Unlimited seats, SSO and a 99.99% SLA.</p>
-          <a class="btn btn--primary btn--sm btn--block" href="pricing.html">Upgrade</a>
-        </div>
+          <a class="btn btn--primary btn--sm btn--block" href="404.html">Upgrade</a>
+                <button class="sidebar__close" type="button" data-sidebar-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
         <button class="side-link" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="m16 17 5-5-5-5M21 12H9"/></svg><span class="sidebar__text">Logout</span></button>
       </div>
     </aside>
@@ -131,7 +136,7 @@
       </header>
 
       <main class="app__content" id="main">
-        <div class="page-head" data-reveal="up">
+        <div class="page-head" data-aos="fade-up">
           <div>
             <h1>Analytics</h1>
             <p>Trailing 8 weeks across every connected source.</p>
@@ -140,13 +145,13 @@
             <div class="segmented" role="group" aria-label="Time range">
               <button>7D</button><button class="is-active">8W</button><button>12M</button>
             </div>
-            <button class="btn btn--ghost btn--sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4M4 21h16"/></svg><span class="btn__label">Export CSV</span></button>
+            <a href="404.html" class="btn btn--ghost btn--sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4M4 21h16"/></svg><span class="btn__label">Export CSV</span></a>
           </div>
         </div>
 
-        <div class="kpi-grid stagger">
+        <div class="kpi-grid stagger" data-aos-stagger="90">
 
-          <article class="kpi" data-reveal="up">
+          <article class="kpi" data-aos="zoom-in-up" data-aos="fade-up">
             <div class="kpi__top">
               <span class="kpi__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.4 3.4 0 0 1 0 5.6M18 14.4a6.5 6.5 0 0 1 3.5 5.6"/></svg></span>
               <span class="trend trend--up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>9.7%</span>
@@ -157,7 +162,7 @@
             <p class="kpi__foot">Weekly active, last 7 days</p>
           </article>
 
-          <article class="kpi" data-reveal="up">
+          <article class="kpi" data-aos="zoom-in-up" data-aos="fade-up">
             <div class="kpi__top">
               <span class="kpi__icon kpi__icon--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9 11l4 4 8-8"/><path d="M16 7h5v5"/></svg></span>
               <span class="trend trend--up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>4.2%</span>
@@ -168,7 +173,7 @@
             <p class="kpi__foot">Up from 13m 48s</p>
           </article>
 
-          <article class="kpi" data-reveal="up">
+          <article class="kpi" data-aos="zoom-in-up" data-aos="fade-up">
             <div class="kpi__top">
               <span class="kpi__icon kpi__icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></span>
               <span class="trend trend--down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7 7 17M15 17H7V9"/></svg>0.6%</span>
@@ -179,7 +184,7 @@
             <p class="kpi__foot">Trial → paid</p>
           </article>
 
-          <article class="kpi" data-reveal="up">
+          <article class="kpi" data-aos="zoom-in-up" data-aos="fade-up">
             <div class="kpi__top">
               <span class="kpi__icon kpi__icon--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></span>
               <span class="trend trend--up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>22.4%</span>
@@ -191,7 +196,7 @@
           </article>
         </div>
 
-        <section class="widget" data-reveal="up">
+        <section class="widget data-aos="fade-up"" data-aos="fade-up">
           <div class="widget__head">
             <div>
               <h3>Active users over time</h3>
@@ -204,7 +209,7 @@
         </section>
 
         <div class="dash-grid--even dash-grid">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head">
               <div><h3>Retention</h3><p>Percentage still active on day N</p></div>
             </div>
@@ -213,7 +218,7 @@
             </div>
           </section>
 
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head">
               <div><h3>Device mix</h3><p>Sessions by device type</p></div>
             </div>
@@ -228,7 +233,7 @@
           </section>
         </div>
 
-        <section class="widget" data-reveal="up">
+        <section class="widget data-aos="fade-up"" data-aos="fade-up">
           <div class="widget__head">
             <div><h3>Top pages</h3><p>By unique visitors this week</p></div>
           </div>
@@ -253,6 +258,8 @@
       </main>
     </div>
   </div>
+
+  <script src="assets/js/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/validation.js"></script>

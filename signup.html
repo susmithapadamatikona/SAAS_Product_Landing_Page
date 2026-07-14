@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#09090C" />
 
-  <title>Create Your Account | Nebula AI</title>
-  <meta name="description" content="Start your 14-day free trial of Nebula AI. No credit card required, unlimited seats during the trial." />
-  <link rel="canonical" href="https://nebula.ai/signup.html" />
+  <title>Create Your Account | Stackly AI</title>
+  <meta name="description" content="Start your 14-day free trial of Stackly AI. No credit card required, unlimited seats during the trial." />
+  <link rel="canonical" href="https://stackly.ai/signup.html" />
 
-  <meta property="og:title" content="Create Your Account | Nebula AI" />
-  <meta property="og:description" content="Start your 14-day free trial of Nebula AI. No credit card required, unlimited seats during the trial." />
+  <meta property="og:title" content="Create Your Account | Stackly AI" />
+  <meta property="og:description" content="Start your 14-day free trial of Stackly AI. No credit card required, unlimited seats during the trial." />
   <meta property="og:image" content="assets/images/og-cover.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -40,13 +40,13 @@
 
       <a class="logo" href="index.html">
         <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 17 9 5 9-5" /><path d="m3 12 9 5 9-5" /></svg></span>
-        <span>Nebula<span class="text-purple">AI</span></span>
+        <span>Stackly<span class="text-purple">AI</span></span>
       </a>
 
       <div class="auth__aside-body">
-        <span class="badge"><span class="badge__pill">New</span> Nebula Agents 2.0 is live</span>
+        <span class="badge"><span class="badge__pill">New</span> Stackly Agents 2.0 is live</span>
         <h2>The AI workspace your <span class="gradient-text">whole team</span> will actually use.</h2>
-        <p>Connect your tools, describe the outcome, and let Nebula handle the busywork — securely, at enterprise scale.</p>
+        <p>Connect your tools, describe the outcome, and let Stackly handle the busywork — securely, at enterprise scale.</p>
 
         <ul class="auth-points">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Set up your first workflow in under 10 minutes</span></li>
@@ -81,69 +81,91 @@
         <div class="divider-text">or continue with email</div>
 
         <form id="signupForm" novalidate>
-          <div class="field">
-            <label for="fullName">Full name <span class="req">*</span></label>
-            <input class="input" id="fullName" name="fullName" type="text" placeholder="Jane Cooper"
-                   autocomplete="name" data-rule="required|name" data-label="Full name" />
-            <span class="error-msg"></span>
-          </div>
-
-          <div class="field">
-            <label for="email">Work email <span class="req">*</span></label>
-            <input class="input" id="email" name="email" type="email" placeholder="jane@company.com"
-                   autocomplete="email" data-rule="required|email" data-label="Email" />
-            <span class="error-msg"></span>
-          </div>
-
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input class="input" id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000"
-                   autocomplete="tel" data-rule="phone" data-label="Phone" />
-            <span class="error-msg"></span>
-          </div>
-
-          <div class="field">
-            <label for="company">Company</label>
-            <input class="input" id="company" name="company" type="text" placeholder="Acme Inc."
-                   autocomplete="organization" />
-            <span class="error-msg"></span>
-          </div>
-
-          <div class="field">
-            <label for="password">Password <span class="req">*</span></label>
-            <div class="input-group">
-              <input class="input" id="password" name="password" type="password" placeholder="Create a strong password"
-                     autocomplete="new-password" data-rule="required|password" data-label="Password" />
-              <button class="input-group__icon" type="button" data-toggle-password="#password" aria-label="Show password">
-                <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg><svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.1A10.9 10.9 0 0 1 12 5c6.4 0 10 7 10 7a18 18 0 0 1-2.7 3.7M6.6 6.6A17.6 17.6 0 0 0 2 12s3.6 7 10 7a10.7 10.7 0 0 0 5.4-1.4"/><path d="m2 2 20 20"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
-              </button>
-            </div>
-            <span class="error-msg"></span>
-
-            <div class="strength" data-for="#password" data-level="0">
-              <div class="strength__bars"><i></i><i></i><i></i><i></i></div>
-              <div class="strength__label"><span>Password strength</span><b>Too weak</b></div>
+          <div class="field-row">
+            <div class="field">
+              <label for="fullName">Full name <span class="req">*</span></label>
+              <input class="input" id="fullName" name="fullName" type="text" placeholder="Enter the Full Name"
+                     autocomplete="name" data-rule="required|name" data-label="Full name" />
+              <span class="error-msg"></span>
             </div>
 
-            <ul class="password-hints">
-              <li data-check="length"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least 8 characters</span></li>
-              <li data-check="case"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Upper and lowercase letters</span></li>
-              <li data-check="number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least one number</span></li>
-              <li data-check="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least one symbol</span></li>
-            </ul>
+            <div class="field">
+              <label for="email">Work email <span class="req">*</span></label>
+              <input class="input" id="email" name="email" type="email" placeholder="Enter your work email"
+                     autocomplete="email" data-rule="required|email" data-label="Email" />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input class="input" id="phone" name="phone" type="tel" placeholder="Enter your phone number"
+                     autocomplete="tel" data-rule="phone" data-label="Phone" />
+              <span class="error-msg"></span>
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input class="input" id="company" name="company" type="text" placeholder="Enter your company name"
+                     autocomplete="organization" />
+              <span class="error-msg"></span>
+            </div>
           </div>
 
           <div class="field">
-            <label for="confirmPassword">Confirm password <span class="req">*</span></label>
-            <div class="input-group">
-              <input class="input" id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter your password"
-                     autocomplete="new-password" data-rule="required|match" data-match="#password" data-label="Confirm password" />
-              <button class="input-group__icon" type="button" data-toggle-password="#confirmPassword" aria-label="Show password">
-                <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg><svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.1A10.9 10.9 0 0 1 12 5c6.4 0 10 7 10 7a18 18 0 0 1-2.7 3.7M6.6 6.6A17.6 17.6 0 0 0 2 12s3.6 7 10 7a10.7 10.7 0 0 0 5.4-1.4"/><path d="m2 2 20 20"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
-              </button>
-            </div>
+            <label for="role">Your role <span class="req">*</span></label>
+            <select class="select" id="role" name="role" data-rule="required" data-label="Role">
+              <option value="">Select your role…</option>
+              <option value="Administrator">Administrator</option>
+              <option value="Manager">Manager</option>
+              <option value="Team Member">Team Member</option>
+              <option value="Developer">Developer</option>
+              <option value="Analyst">Analyst</option>
+              <option value="Viewer">Viewer (read-only)</option>
+            </select>
             <span class="error-msg"></span>
           </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="password">Password <span class="req">*</span></label>
+              <div class="input-group">
+                <input class="input" id="password" name="password" type="password" placeholder="Create a strong password"
+                       autocomplete="new-password" data-rule="required|password" data-label="Password" />
+                <button class="input-group__icon" type="button" data-toggle-password="#password" aria-label="Show password">
+                  <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg><svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.1A10.9 10.9 0 0 1 12 5c6.4 0 10 7 10 7a18 18 0 0 1-2.7 3.7M6.6 6.6A17.6 17.6 0 0 0 2 12s3.6 7 10 7a10.7 10.7 0 0 0 5.4-1.4"/><path d="m2 2 20 20"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+                </button>
+              </div>
+              <span class="error-msg"></span>
+            </div>
+
+            <div class="field">
+              <label for="confirmPassword">Confirm password <span class="req">*</span></label>
+              <div class="input-group">
+                <input class="input" id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter your password"
+                       autocomplete="new-password" data-rule="required|match" data-match="#password" data-label="Confirm password" />
+                <button class="input-group__icon" type="button" data-toggle-password="#confirmPassword" aria-label="Show password">
+                  <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg><svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.1A10.9 10.9 0 0 1 12 5c6.4 0 10 7 10 7a18 18 0 0 1-2.7 3.7M6.6 6.6A17.6 17.6 0 0 0 2 12s3.6 7 10 7a10.7 10.7 0 0 0 5.4-1.4"/><path d="m2 2 20 20"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+                </button>
+              </div>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <!-- Spans both password fields; the four rules sit in a 2x2 grid
+               instead of a four-line stack. -->
+          <div class="strength" data-for="#password" data-level="0">
+                <div class="strength__bars"><i></i><i></i><i></i><i></i></div>
+                <div class="strength__label"><span>Password strength</span><b>Too weak</b></div>
+              </div>
+
+          <ul class="password-hints">
+                        <li data-check="length"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least 8 characters</span></li>
+                        <li data-check="case"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Upper and lowercase letters</span></li>
+                        <li data-check="number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least one number</span></li>
+                        <li data-check="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>At least one symbol</span></li>
+                      </ul>
 
           <label class="checkbox mb-md">
             <input type="checkbox" name="terms" data-require-checked />
@@ -165,6 +187,8 @@
 
     </main>
   </div>
+
+  <script src="assets/js/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/validation.js"></script>

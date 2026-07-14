@@ -38,7 +38,11 @@
 
     $$('[data-user-name]').forEach(function (el) { el.textContent = user.name; });
     $$('[data-user-email]').forEach(function (el) { el.textContent = user.email; });
-    $$('[data-user-plan]').forEach(function (el) { el.textContent = user.plan || 'Professional'; });
+    $$('[data-user-role]').forEach(function (el) { el.textContent = user.role || 'Team Member'; });
+    // The topbar shows the role the user signed in as; the plan is the fallback.
+    $$('[data-user-plan]').forEach(function (el) {
+      el.textContent = user.role || user.plan || 'Professional';
+    });
     $$('[data-user-initials]').forEach(function (el) { el.textContent = initials; });
     $$('[data-user-first]').forEach(function (el) { el.textContent = user.name.split(' ')[0]; });
   }
@@ -49,42 +53,40 @@
   function initSidebar() {
     var app = $('.app');
     var sidebar = $('.sidebar');
-    var collapseBtn = $('.sidebar__collapse');
     var mobileToggle = $('.topbar__toggle');
     var overlay = $('.overlay');
 
-    // Restore the collapsed preference.
-    try {
-      if (localStorage.getItem('nebula:sidebar') === 'collapsed') app.classList.add('is-collapsed');
-    } catch (e) { /* ignore */ }
-
-    if (collapseBtn) {
-      collapseBtn.addEventListener('click', function () {
-        app.classList.toggle('is-collapsed');
-        try {
-          localStorage.setItem('nebula:sidebar', app.classList.contains('is-collapsed') ? 'collapsed' : 'expanded');
-        } catch (e) { /* ignore */ }
-        setTimeout(function () {
-          if (window.NebulaChart) window.NebulaChart.redrawAll();
-        }, 320);
-      });
-    }
+    var closeBtn = $('[data-sidebar-close]');
 
     function closeMobile() {
       sidebar.classList.remove('is-open');
       if (overlay) overlay.classList.remove('is-open');
       document.body.classList.remove('no-scroll');
+      if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
     }
 
     if (mobileToggle) {
+      mobileToggle.setAttribute('aria-expanded', 'false');
       mobileToggle.addEventListener('click', function () {
         var open = sidebar.classList.toggle('is-open');
         if (overlay) overlay.classList.toggle('is-open', open);
         document.body.classList.toggle('no-scroll', open);
+        mobileToggle.setAttribute('aria-expanded', String(open));
       });
     }
 
+    // Three ways out: the X, the dimmed backdrop, and Escape.
+    if (closeBtn) closeBtn.addEventListener('click', closeMobile);
     if (overlay) overlay.addEventListener('click', closeMobile);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && sidebar.classList.contains('is-open')) closeMobile();
+    });
+
+    // Never leave the drawer stuck open when resizing back up to desktop.
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1024 && sidebar.classList.contains('is-open')) closeMobile();
+    });
     sidebar.addEventListener('click', function (e) {
       if (e.target.closest('a') && window.innerWidth <= 1024) closeMobile();
     });

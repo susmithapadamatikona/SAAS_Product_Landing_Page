@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#09090C" />
   <meta name="robots" content="noindex, nofollow" />
 
-  <title>Messages | Nebula AI</title>
-  <meta name="description" content="Team conversations and customer threads inside your Nebula AI workspace." />
-  <link rel="canonical" href="https://nebula.ai/messages.html" />
+  <title>Messages | Stackly AI</title>
+  <meta name="description" content="Team conversations and customer threads inside your Stackly AI workspace." />
+  <link rel="canonical" href="https://stackly.ai/messages.html" />
 
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,7 @@
       <div class="sidebar__head">
         <a class="logo" href="index.html">
           <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 17 9 5 9-5" /><path d="m3 12 9 5 9-5" /></svg></span>
-          <span>Nebula<span class="text-purple">AI</span></span>
+          <span>Stackly<span class="text-purple">AI</span></span>
         </a>
         <button class="sidebar__collapse" aria-label="Collapse sidebar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
@@ -61,8 +61,13 @@
         <div class="upgrade-card">
           <h4>Go Enterprise</h4>
           <p>Unlimited seats, SSO and a 99.99% SLA.</p>
-          <a class="btn btn--primary btn--sm btn--block" href="pricing.html">Upgrade</a>
-        </div>
+          <a class="btn btn--primary btn--sm btn--block" href="404.html">Upgrade</a>
+                <button class="sidebar__close" type="button" data-sidebar-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
         <button class="side-link" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="m16 17 5-5-5-5M21 12H9"/></svg><span class="sidebar__text">Logout</span></button>
       </div>
     </aside>
@@ -131,7 +136,7 @@
       </header>
 
       <main class="app__content" id="main">
-        <div class="page-head" data-reveal="up">
+        <div class="page-head" data-aos="fade-up">
           <div>
             <h1>Messages</h1>
             <p>3 unread conversations.</p>
@@ -142,14 +147,14 @@
         </div>
 
         <div class="dash-grid">
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head">
               <h3>Inbox</h3>
               <span class="pill pill--purple">3 new</span>
             </div>
 
             <div class="activity">
-              <div class="activity__item notif-unread" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right" notif-unread" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">AK</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Amara Kelly</b> <span class="pill pill--purple" style="margin-left:6px">New</span></p>
@@ -157,7 +162,7 @@
                   <time>18m ago</time>
                 </div>
               </div>
-              <div class="activity__item notif-unread" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right" notif-unread" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">MR</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Marcus Reyes</b> <span class="pill pill--purple" style="margin-left:6px">New</span></p>
@@ -165,7 +170,7 @@
                   <time>1h ago</time>
                 </div>
               </div>
-              <div class="activity__item notif-unread" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right" notif-unread" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">JD</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Jordan Diaz</b> <span class="pill pill--purple" style="margin-left:6px">New</span></p>
@@ -173,7 +178,7 @@
                   <time>3h ago</time>
                 </div>
               </div>
-              <div class="activity__item" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right"" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">SL</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Sofia Lindqvist</b></p>
@@ -181,7 +186,7 @@
                   <time>Yesterday ago</time>
                 </div>
               </div>
-              <div class="activity__item" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right"" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">PR</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Priya Raghavan</b></p>
@@ -189,7 +194,7 @@
                   <time>Yesterday ago</time>
                 </div>
               </div>
-              <div class="activity__item" style="border-radius:12px">
+              <div class="activity__item data-aos="fade-right"" style="border-radius:12px">
                 <span class="testimonial__avatar" style="width:38px;height:38px;font-size:.76rem;flex:none">LC</span>
                 <div class="activity__body" style="flex:1;min-width:0">
                   <p><b>Lucia Chen</b></p>
@@ -200,7 +205,7 @@
             </div>
           </section>
 
-          <section class="widget" data-reveal="up">
+          <section class="widget data-aos="fade-up"" data-aos="fade-up">
             <div class="widget__head">
               <div>
                 <h3>Amara Kelly</h3>
@@ -210,7 +215,7 @@
             </div>
 
             <div class="activity" style="gap:14px">
-              <div class="activity__item" style="align-items:flex-start">
+              <div class="activity__item data-aos="fade-right"" style="align-items:flex-start">
                 <span class="testimonial__avatar" style="width:34px;height:34px;font-size:.7rem;flex:none">AK</span>
                 <div class="activity__body">
                   <p style="font-size:.88rem">Can you review the Q3 forecast before the board call? The numbers from the new agent look strong but I want a second pair of eyes.</p>
@@ -218,7 +223,7 @@
                 </div>
               </div>
 
-              <div class="activity__item" style="align-items:flex-start;flex-direction:row-reverse;text-align:right">
+              <div class="activity__item data-aos="fade-right"" style="align-items:flex-start;flex-direction:row-reverse;text-align:right">
                 <span class="testimonial__avatar" style="width:34px;height:34px;font-size:.7rem;flex:none" data-user-initials>DU</span>
                 <div class="activity__body">
                   <p style="font-size:.88rem">On it — pulling the source rows now. Anything specific you're worried about?</p>
@@ -226,7 +231,7 @@
                 </div>
               </div>
 
-              <div class="activity__item" style="align-items:flex-start">
+              <div class="activity__item data-aos="fade-right"" style="align-items:flex-start">
                 <span class="testimonial__avatar" style="width:34px;height:34px;font-size:.7rem;flex:none">AK</span>
                 <div class="activity__body">
                   <p style="font-size:.88rem">Mostly the EMEA line. It's up 40% and I can't tell if that's real or a currency artefact.</p>
@@ -249,6 +254,8 @@
       </main>
     </div>
   </div>
+
+  <script src="assets/js/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/validation.js"></script>

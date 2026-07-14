@@ -58,6 +58,15 @@
     } catch (e) { return null; }
   }
 
+  /** "ada.lovelace@corp.com" -> "Ada Lovelace", so a guest session still has a name. */
+  function nameFromEmail(email) {
+    return String(email).split('@')[0]
+      .split(/[._-]+/)
+      .filter(Boolean)
+      .map(function (part) { return part.charAt(0).toUpperCase() + part.slice(1); })
+      .join(' ') || 'There';
+  }
+
   var Auth = {
     /** @returns {{ok:boolean, error?:string, user?:object}} */
     signup: function (data) {
@@ -72,6 +81,7 @@
         email: data.email.trim().toLowerCase(),
         phone: (data.phone || '').trim(),
         company: (data.company || '').trim(),
+        role: (data.role || 'Team Member').trim(),
         password: digest(data.password),
         plan: 'Professional',
         createdAt: new Date().toISOString()
@@ -82,17 +92,42 @@
       return { ok: true, user: user };
     },
 
-    login: function (email, password, remember) {
-      var users = readUsers();
-      var user = users.filter(function (u) {
-        return u.email.toLowerCase() === email.trim().toLowerCase();
+    /**
+     * Sign in.
+     *
+     * This is a front-end demo, so signing in does NOT require a prior signup:
+     * if the email has no account we mint a guest session on the spot and let
+     * the user straight through to the dashboard. An email that *does* have an
+     * account still has its password checked, so the registered flow keeps
+     * working as you'd expect.
+     */
+    login: function (email, password, remember, role) {
+      var clean = email.trim().toLowerCase();
+      var user = readUsers().filter(function (u) {
+        return u.email.toLowerCase() === clean;
       })[0];
 
-      if (!user) return { ok: false, error: 'No account found with that email.' };
-      if (user.password !== digest(password)) return { ok: false, error: 'Incorrect password. Please try again.' };
+      if (user) {
+        if (user.password !== digest(password)) {
+          return { ok: false, error: 'Incorrect password. Please try again.' };
+        }
+        // Honour the role picked on the sign-in form for this session.
+        if (role) user.role = role;
+        this.startSession(user, remember);
+        return { ok: true, user: user, guest: false };
+      }
 
-      this.startSession(user, remember);
-      return { ok: true, user: user };
+      // No account: create a guest session from what was typed.
+      var guest = {
+        id: 'g_' + Date.now().toString(36),
+        name: nameFromEmail(clean),
+        email: clean,
+        role: role || 'Team Member',
+        plan: 'Professional',
+        guest: true
+      };
+      this.startSession(guest, remember);
+      return { ok: true, user: guest, guest: true };
     },
 
     startSession: function (user, remember) {
@@ -100,7 +135,9 @@
         id: user.id,
         name: user.name,
         email: user.email,
+        role: user.role || 'Team Member',
         plan: user.plan,
+        guest: !!user.guest,
         at: Date.now()
       });
       try {
@@ -389,6 +426,17 @@
 
     wireLiveValidation(form);
 
+    // Arriving straight from signup: prefill the email they just registered
+    // and put the cursor in the password field.
+    try {
+      var justSignedUp = sessionStorage.getItem('nebula:pending');
+      if (justSignedUp) {
+        form.email.value = justSignedUp;
+        sessionStorage.removeItem('nebula:pending');
+        if (form.password) form.password.focus();
+      }
+    } catch (err) { /* storage unavailable */ }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!validateForm(form)) return;
@@ -401,7 +449,8 @@
         var result = Auth.login(
           form.email.value,
           form.password.value,
-          form.remember && form.remember.checked
+          form.remember && form.remember.checked,
+          form.role ? form.role.value : ''
         );
         done();
 
@@ -410,7 +459,14 @@
           return;
         }
 
-        toast('Welcome back!', 'Redirecting you to your dashboard…', 'success', 2000);
+        toast(
+          result.guest ? 'Signed in' : 'Welcome back!',
+          result.guest
+            ? 'Exploring as ' + result.user.role + ' — taking you to the dashboard…'
+            : 'Redirecting you to your dashboard…',
+          'success',
+          2000
+        );
         var back = sessionStorage.getItem('nebula:redirect');
         sessionStorage.removeItem('nebula:redirect');
         setTimeout(function () {
@@ -458,6 +514,7 @@
           email: form.email.value,
           phone: form.phone.value,
           company: form.company.value,
+          role: form.role ? form.role.value : '',
           password: form.password.value
         });
         done();
@@ -467,11 +524,11 @@
           return;
         }
 
-        // Stash the address so verify-email.html can show it.
+        // Carry the address over so the login form can prefill it.
         try { sessionStorage.setItem('nebula:pending', result.user.email); } catch (err) { /* ignore */ }
 
-        toast('Account created!', 'Check your inbox for the verification code.', 'success', 2500);
-        setTimeout(function () { window.location.href = 'verify-email.html'; }, 1100);
+        toast('Account created!', 'Sign in with your new account to continue.', 'success', 2500);
+        setTimeout(function () { window.location.href = 'login.html'; }, 1100);
       }, 950);
     });
   }

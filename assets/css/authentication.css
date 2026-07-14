@@ -8,40 +8,82 @@
   min-height: 100svh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: hidden;
+  align-items: start;   /* let the aside stick rather than stretch */
   background: var(--bg-primary);
 }
 
 /* ---------- Left: brand panel ---------- */
+/* Sticky and exactly one viewport tall. Previously it stretched to the full
+   document height, so on the tall signup page the logo was stranded at the top,
+   the copy floated in the middle and the quote sat far below the fold. */
+/* Sticky, exactly one viewport tall, and its three blocks (logo, pitch, quote)
+   sit as ONE evenly-spaced centred stack. Previously `margin: auto` pinned the
+   logo to the very top and the quote to the very bottom, which left two large
+   dead gaps and made the panel read as scattered rather than as a card. */
 .auth__aside {
-  position: relative;
+  position: sticky;
+  top: 0;
+  height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(32px, 4vw, 56px);
+  justify-content: center;
+  gap: clamp(20px, 2.6vh, 30px);
+  padding: clamp(32px, 3.4vw, 52px);
   overflow: hidden;
   background: var(--gradient-bg);
   border-right: 1px solid var(--divider);
 }
-.auth__aside > * { position: relative; z-index: 2; }
 
-.auth__aside-body { max-width: 460px; margin-block: auto; }
-.auth__aside-body h2 { font-size: clamp(1.8rem, 2.6vw, 2.5rem); margin: 20px 0 16px; }
-.auth__aside-body p { font-size: 1rem; }
+/* Centre the aside's content column the same way the form card is centred, so
+   the two halves read as a matched pair instead of one hugging the edge. */
+.auth__aside > * {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 480px;
+  margin-inline: auto;
+}
 
-.auth-points { display: grid; gap: 16px; margin-top: 34px; }
-.auth-points li { display: flex; gap: 12px; align-items: flex-start; font-size: .93rem; color: var(--text-2); }
-.auth-points svg { flex: none; width: 20px; height: 20px; margin-top: 2px; color: var(--purple-neon); }
+/* The panel was flat next to the glowing form side — give it its own light. */
+.auth__aside::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 700px;
+  aspect-ratio: 1;
+  background: var(--hero-glow);
+  opacity: .5;
+  pointer-events: none;
+  animation: pulse-glow 11s var(--ease) infinite;
+}
+
+.auth__aside-body h2 {
+  font-size: clamp(1.55rem, 2.1vw, 2.05rem);
+  line-height: 1.22;
+  margin: 16px 0 12px;
+}
+.auth__aside-body p { font-size: .95rem; }
+
+.auth-points {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+}
+.auth-points li { display: flex; gap: 11px; align-items: flex-start; font-size: .89rem; color: var(--text-2); }
+.auth-points svg { flex: none; width: 18px; height: 18px; margin-top: 2px; color: var(--purple-neon); }
 
 .auth__quote {
-  padding: 22px;
+  padding: 18px 20px;
   border-radius: var(--radius);
   border: 1px solid var(--glass-brd);
   background: var(--glass);
   backdrop-filter: blur(18px);
 }
-.auth__quote p { font-size: .93rem; color: var(--text-2); font-style: italic; }
-.auth__quote footer { display: flex; align-items: center; gap: 11px; margin-top: 15px; }
+.auth__quote p { font-size: .88rem; line-height: 1.6; color: var(--text-2); font-style: italic; }
+.auth__quote footer { display: flex; align-items: center; gap: 11px; margin-top: 13px; }
 .auth__quote .testimonial__avatar { width: 36px; height: 36px; font-size: .78rem; }
 .auth__quote strong { display: block; color: var(--text); font-size: .86rem; }
 .auth__quote span { font-size: .76rem; color: var(--text-muted); }
@@ -51,7 +93,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  padding: clamp(28px, 5vw, 56px) clamp(20px, 4vw, 48px);
+  padding: clamp(24px, 2.4vw, 36px) clamp(20px, 3vw, 44px);
   overflow-y: auto;
 }
 .auth__main::before {
@@ -72,7 +114,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 460px;
+  max-width: 480px;   /* matches the aside's content column */
   padding: clamp(26px, 3vw, 40px);
   border-radius: var(--radius-lg);
   border: 1px solid var(--glass-brd);
@@ -180,17 +222,49 @@
 .strength[data-level='3'] b { color: #7bd07b; }
 .strength[data-level='4'] b { color: var(--success); }
 
-.password-hints { display: grid; gap: 6px; margin-top: 12px; }
+/* 2x2 instead of a four-line stack — same information, half the height. */
+.password-hints {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 14px;
+  margin: 12px 0 18px;
+}
 .password-hints li {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: .76rem;
+  gap: 7px;
+  font-size: .74rem;
   color: var(--text-muted);
   transition: color .3s var(--ease);
 }
-.password-hints li svg { width: 13px; height: 13px; }
+.password-hints li svg { flex: none; width: 12px; height: 12px; }
 .password-hints li.is-met { color: var(--success); }
+
+/* ---------- Compact form layout ----------
+   Two fields per row keeps the signup card inside one viewport. */
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;   /* an error under one field must not resize its neighbour */
+  gap: 0 16px;
+}
+@media (max-width: 560px) {
+  .field-row { grid-template-columns: 1fr; }
+  .password-hints { grid-template-columns: 1fr; }
+}
+
+/* Tighten the card's vertical rhythm so the whole form fits one viewport. */
+.auth-card { padding: clamp(22px, 2.2vw, 30px); }
+.auth-card .field { margin-bottom: 12px; }
+.auth-card__head { margin-bottom: 16px; }
+.auth-card__head h1 { font-size: clamp(1.4rem, 2vw, 1.7rem); }
+.auth-card__head p { margin-top: 6px; font-size: .88rem; }
+.auth-card .divider-text { margin: 14px 0; }
+.auth-card__foot { margin-top: 14px; padding-top: 14px; }
+.auth-card .social-btn { padding: 9px 16px; }
+.auth-card .strength { margin-top: 8px; }
+.auth-card .password-hints { margin: 10px 0 14px; }
+.auth-card .auth-row { margin-bottom: 16px; }
 
 /* ---------- OTP ---------- */
 .otp {
